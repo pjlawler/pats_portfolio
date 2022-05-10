@@ -12,6 +12,14 @@ function Gallery() {
             screenshot: 'travelers-screenshot'
         },
         {
+            title: 'Pizza Hunt',
+            description: "Week 19 project.",
+            technologies: 'MongoDB, Express.js, and IndexedDB',
+            github: 'https://github.com/pjlawler/pizza-hunt',
+            url: 'https://powerful-taiga-67670.herokuapp.com/',
+            screenshot: 'pizza-hunt'
+        },
+        {
             title: 'Destination Briefing',
             description: 'The site provides the user with a destination briefing for their travels. Shows the current, including timzone difference, so the user can see the time change along with the current weather and average monthly temperaturs for the selectied country. It also provides the currency, language, electrical requirements, we even included pictures of the used plugs for better understanding of adapters will be needed when traveling. Additionally the site lists specific health information such as the drinking water safety and any required/recommended vaccinations. Our team received an overall grade of 100% on the project.',
             technologies: 'HTML5, CSS, JavaScript, Buma, & Moment.js including the incorporation of two third party APIs and utilizing local storage',
@@ -43,46 +51,33 @@ function Gallery() {
             url: 'https://apps.apple.com/us/app/functioncalc/id1455028714',
             screenshot: 'function-calc'
         }
-    
-    
-    
-    
-    
+
     ]
 
     return (
         <section className="my-5">
             <h3 className='page-header'>My Projects</h3>
-            <div className='flex-row'>
+            <div className='project-group'>
                 { projects.map((project, i) => (
-                    <div className='card my-1'>
-                        <h4 className='card-title'>{`${project.title}`}</h4>
-                        <div className='card-main'>
-                            <div className='card-frame'>
-                                <img
-                                    src={require(`../../assets/screenshots/${project.screenshot}.png`)}
-                                    alt={project.title}   
-                                    className="card-image"
-                                    href={project.url}
-                                    // onClick={() => toggleModal(image, i)}
-                                    key={i}
-                                />
-                                <div className='gallery-links'>
-                                    <a href={project.url} rel='noreferrer' target="_blank">Website</a>
-                                    <a href={project.github} rel='noreferrer' target="_blank">GitHub Repository</a>
-                                </div>
-                            </div>
-                            <div className='card-body'>
-                                <p className='card-text'>{`${project.description}`}</p>
-                                <br />
-                                <h6>Technologies Used</h6>
-                                <p className='card-text'>{`${project.technologies}`}</p>
-                            </div>
+                    <div className='project'>
+                        <h4 className='project-title'>{`${project.title}`}</h4>
+                        <img
+                            src={require(`../../assets/screenshots/${project.screenshot}.png`)}
+                            alt={project.title}   
+                            className='project-image'
+                            href={project.url}
+                            // onClick={() => toggleModal(image, i)}
+                            key={i}
+                        />
+                        <h5 className='project-text'>{`Techonogies: ${project.technologies}`}</h5>
+                        <div className='link-wrapper'>
+                            <a href={project.url} rel='noreferrer' target="_blank">URL</a>
+                            <a href={project.github} rel='noreferrer' target="_blank">GitHub</a>
                         </div>
-                        
+                
                     </div>
                 ))}
-        </div>
+            </div>
         </section>
     )
 }

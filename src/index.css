@@ -13,8 +13,6 @@ main {
 
 :root {
   --dark: #181d31; /* rgb(24, 29, 49) */
-
-
   --primary: #8c54ff;
   --tertiary: #B12704;
   --error: rgb(228, 46, 1);
@@ -184,6 +182,10 @@ nav {
   padding: 10px;
 }
 
+.title {
+  margin-left: 20px;
+}
+
 textarea {
 	width: 600px;
 	height: 120px;
@@ -217,6 +219,11 @@ textarea {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .mx-1 {
@@ -264,32 +271,96 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+
+
 .card {
   display: flex;
   flex-direction: column;
   background: var(--dark);
   padding: 2px;
-  width: 95%;
   margin: 0 auto;
-  margin-top: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.project-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark);
+  padding: 10px;
+  margin: 10px;
+  flex: 0 0 45%;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.project-title {
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+  color: var(--light);
+}
+
+.project-image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project .link-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project .link-wrapper a {
+  width: 75px;
+  color: var(--light);
+  font-size: 14px;
+  margin: 20px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 10px;
+  border: var(--light) 1px solid;
+  text-decoration: none;
+}
+
+.project .link-wrapper a:hover {
+  color: var(--dark);
+  background: var(--light);
+}
+
+.project-text {
+  color: var(--light);
+  font-size: 12px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5px;
 }
 
 .card-title {
   text-align: left;
-  padding-left: 20px;
   color: var(--light);
 }
 
 .card-header {
   text-align: center;
-
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 
 .card-frame {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   flex: 4;
 }
 
@@ -301,7 +372,6 @@ textarea {
 
 .card-image {
   width: 90%;
-  height: auto;
 }
 
 .card-body {
@@ -312,11 +382,13 @@ textarea {
   line-height: 1.5;
 }
 
+
 .img-thumbnail {
   width: auto;
   height: 150px;
   cursor: pointer;
 }
+
 
 .modalBackdrop {
 	background: rgba(0, 0, 0, .65);
@@ -359,7 +431,11 @@ button {
 .gallery-links {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
 
+.gallery-links a {
+  color: var(--light);
 }
 
 /* a {
