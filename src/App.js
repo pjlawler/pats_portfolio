@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header'
-import Gallery from '../src/components/Gallery'
-import Bio from '../src/components/Bio'
+import Footer from './components/Footer'
+import Gallery from './components/Portfolio'
+import Bio from './components/About'
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       {/* <p>A professional developer/coder who posseses an invaluable combination of education and experience coupled with an extreme passion and appitude for web/software developement</p> */}
       {currentNavItem === 'About Me' && (<Bio />)}
       {currentNavItem === 'Portfolio' && (<Gallery />)}
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
+import Project from '../Project'
 
-function Gallery() {
+function Portfolio() {
 
     const projects = [
         {
@@ -59,27 +60,18 @@ function Gallery() {
             <h3 className='page-header'>My Projects</h3>
             <div className='project-group'>
                 { projects.map((project, i) => (
-                    <div className='project'>
-                        <h4 className='project-title'>{`${project.title}`}</h4>
-                        <img
-                            src={require(`../../assets/screenshots/${project.screenshot}.png`)}
-                            alt={project.title}   
-                            className='project-image'
-                            href={project.url}
-                            // onClick={() => toggleModal(image, i)}
-                            key={i}
-                        />
-                        <h5 className='project-text'>{`Techonogies: ${project.technologies}`}</h5>
-                        <div className='link-wrapper'>
-                            <a href={project.url} rel='noreferrer' target="_blank">URL</a>
-                            <a href={project.github} rel='noreferrer' target="_blank">GitHub</a>
-                        </div>
-                
-                    </div>
+                    <Project
+                      title={project.title}
+                      screenshot={project.screenshot}
+                      technologies={project.technologies}
+                      url={project.url}
+                      github={project.github}
+                      index={i}
+                    />
                 ))}
             </div>
         </section>
     )
 }
 
-export default Gallery;
+export default Portfolio;
