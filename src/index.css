@@ -363,15 +363,24 @@ section {
   margin: 0 auto;
 }
 
+.card-frame h5, .card-frame ul {
+  margin-left: 20px;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.card-frame h5 {
+  text-align: center;
+}
 .card-body {
   flex: 8;
 }
 
-.card-body ul {
+.card ul {
   margin-bottom: 20px;
 }
 
-.card-body li {
+.card li {
   margin-left: 20px;
 }
 
@@ -423,16 +432,6 @@ section {
 .gallery-links a {
   color: var(--light);
 }
-
-/* a {
-	border-radius: 5px;
-	color: var(--light);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
-} */
 
 .navActive {
   background: var(--light);
@@ -499,7 +498,7 @@ section {
   width: 100px;
   color: var(--light);
   font-size: 14px;
-  margin: 20px;
+  margin-top: 15px;
   padding: 7px;
   text-align: center;
   border-radius: 10px;
@@ -507,7 +506,7 @@ section {
   text-decoration: none;
 }
 
-.link-wrapper a:hover {
+.resume-wrapper a:hover {
   color: var(--dark);
   background: var(--light);
 }
@@ -541,5 +540,8 @@ section {
 
 .list-columns .right {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 

@@ -56,18 +56,21 @@ function Resume() {
     return (
         <div>
         <section className="my-5">
-            <h3 className='page-header'>Resume</h3>
+            <h3 className='page-header'>My Resume</h3>
             <div className="resume-wrapper">
-                <a href={require('../../assets/pats_resume.pdf')} download>Download</a>
+                
                 <div className="list-columns">
                     <div className="left">
                         <h5>Proficiencies</h5>
                         <ul className="proficiencies-list">
-                            { proficiencies.sort(function(a,b){return b.rating - a.rating}).map((prof, i) => (<li key={i}>{`${prof.name} ${stars(prof.rating)}` }</li>))} 
+                            { proficiencies
+                            .sort(function(a,b){return b.rating - a.rating})
+                            .map((prof, i) => (<li key={i}>{`${prof.name} ${stars(prof.rating)}` }</li>))} 
                         </ul>
                     </div>
                     <div className="right">
                         <img src={resumeImage} style={{width: "100%"}} alt="cover" />
+                        <a href={require('../../assets/pats_resume.pdf')} download>Download</a>
                     </div>
                 </div>    
             </div>

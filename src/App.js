@@ -10,6 +10,7 @@ import './App.css';
 
 function App() {
 
+  // array of the available pages to be displayed in the navigation bar
   const [navItems] = useState([
     'About Me',
     'Portfolio',
@@ -17,13 +18,16 @@ function App() {
     'Resume'
    ]);
    
+  // use state to keep track of the current page being displayed
   const [currentNavItem, setNavItem] = useState(navItems[0]);
 
+  // updates the title in the browser tab based on the current page
   useEffect(() => {
     // Update the document title using the browser API
     document.title = `PJL - ${currentNavItem}`;
   });
 
+  // returns the jsx to be displayed on the page with the current page componenets based on the current nav item selected
   return (
     <div className="container">
       <Header navItems={navItems} currentNavItem={currentNavItem} setNavItem={setNavItem} />

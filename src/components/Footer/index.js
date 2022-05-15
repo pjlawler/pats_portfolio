@@ -1,6 +1,8 @@
 import React from "react";
 
 function Footer() {
+
+    // array of the social links to be displayed in the footer
     const socialLinks = [
         {
             name: 'GitHub',
@@ -18,6 +20,8 @@ function Footer() {
             url: 'https://twitter.com/patlaw777'
         }
     ]
+
+    // returns the jsx for the footer to include the icons with their respecitve links
     return (
         <div className="footer">
             <div className="icon-group flex-row">

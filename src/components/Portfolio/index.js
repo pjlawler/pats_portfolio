@@ -3,6 +3,7 @@ import Project from '../Project'
 
 function Portfolio() {
 
+    // array of the projects to be displayed. Update these to update the portfolio
     const projects = [
         {
             title: "Traveler's Hidden Gems",
@@ -55,6 +56,7 @@ function Portfolio() {
 
     ]
 
+    // returns the jsx for the project list, iterates through each of the projects in the array and presents it
     return (
         <section className="my-5">
             <h3 className='page-header'>My Projects</h3>

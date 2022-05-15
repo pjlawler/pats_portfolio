@@ -1,8 +1,19 @@
 import coverImage from "../../assets/pjl.png"
 import React from 'react';
 
+
 function About() {
-    return (
+
+  const contactInfo = {
+    name: 'Pat Lawler',
+    email: 'patlaw777@icloud.com',
+    phone: '218-213-3456',
+    linkedIn: 'https://www.linkedin.com/in/av8erpat/',
+    github: 'https://github.com/pjlawler'
+  }
+    
+  // returns the jsx for the about page
+  return (
       <section className="my-5">
           <h3 className='page-header'>About Me</h3>
           <div className="card">
@@ -10,6 +21,11 @@ function About() {
             <div className="card-main">
               <div className="card-frame">
                   <img src={coverImage} style={{ width: "90%" }} alt="cover" />
+                  <h5>{contactInfo.name}</h5>
+                  <ul>
+                    <li><p>email: <a href={"mailto:".concat(contactInfo.email)}>{contactInfo.email}</a></p></li>
+                    <li><p>phone: <a href={"tel:".concat(contactInfo.phone)}>{contactInfo.phone}</a></p></li>
+                  </ul>                  
               </div>
               <div className="card-body">
                 <p className="card-text">Retired as an Air Force Master Sergeant, Pat is currently persuing a career change as a web/software developer. He most recently worked an Airline Pilot and is now an endeavoring programmer/developer. He is currently attending the Univeristy of Minnesota's Coding Bootcamp focused on Full-Stack development including HTML, CSS, JavaScript, React, Node/NPM, VS Code, Git, mySQL, Firebase, and Heroku.  His expected completion date is June 2022.</p>
