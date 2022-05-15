@@ -66,7 +66,7 @@ function Portfolio() {
                       technologies={project.technologies}
                       url={project.url}
                       github={project.github}
-                      index={i}
+                      key={i}
                     />
                 ))}
             </div>

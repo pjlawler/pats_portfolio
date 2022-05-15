@@ -134,7 +134,7 @@ form {
   width: 40%;
 }
 
-input {
+input, textarea {
   font-size: 1rem;
   padding: 0.25rem;
   border: 1px solid var(--dark);
@@ -143,7 +143,7 @@ input {
   transition: box-shadow 0.2s;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
@@ -176,12 +176,6 @@ nav {
   margin-left: 20px;
 }
 
-textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
-}
 
 .container {
   width: 95%;
@@ -261,7 +255,9 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-
+section {
+  min-height: 75vh;
+}
 
 .card {
   display: flex;
@@ -417,17 +413,6 @@ textarea {
 	margin-bottom: 25px;
 }
 
-button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
-}
 
 .gallery-links {
   display: flex;
@@ -455,3 +440,106 @@ button {
   font-weight: 800;
  
 }
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-textInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#contact-form button {
+  width: 75px;
+  color: var(--light);
+  background: var(--dark);
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 10px;
+  border: var(--light) 1px solid;
+	cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.contact {
+  width: 400px;
+  background: var(--dark);
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--light);
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.resume-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--dark);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.resume-wrapper a {
+  width: 100px;
+  color: var(--light);
+  font-size: 14px;
+  margin: 20px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 10px;
+  border: var(--light) 1px solid;
+  text-decoration: none;
+}
+
+.link-wrapper a:hover {
+  color: var(--dark);
+  background: var(--light);
+}
+
+.proficiencies-list {
+  color: var(--light);
+  list-style: none;
+}
+
+.proficiencies-list li {
+  margin-left: 20px;
+  line-height: 1.5;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.list-columns {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--light);
+  width: 90%;
+}
+
+.list-columns img {
+  margin: 0 auto;
+}
+
+.list-columns .left {
+  flex: 1;
+}
+
+.list-columns .right {
+  flex: 1;
+}
+

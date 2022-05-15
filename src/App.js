@@ -3,6 +3,9 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Gallery from './components/Portfolio'
 import Bio from './components/About'
+import Contact from './components/Contact'
+import Resume from './components/Resume'
+
 import './App.css';
 
 function App() {
@@ -28,6 +31,8 @@ function App() {
       {/* <p>A professional developer/coder who posseses an invaluable combination of education and experience coupled with an extreme passion and appitude for web/software developement</p> */}
       {currentNavItem === 'About Me' && (<Bio />)}
       {currentNavItem === 'Portfolio' && (<Gallery />)}
+      {currentNavItem === 'Contact' && (<Contact />)}
+      {currentNavItem === 'Resume' && (<Resume />)}
       <Footer />
     </div>
   );

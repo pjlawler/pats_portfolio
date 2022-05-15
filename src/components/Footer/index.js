@@ -22,8 +22,13 @@ function Footer() {
         <div className="footer">
             <div className="icon-group flex-row">
                 {socialLinks.map((item, i) => (
-                    <a href={`${item.url}`} rel='noreferrer' target="_blank">
-                        <img src={require(`../../assets/${item.icon}.png`)} style={{ width: "40px" }} alt={`link to ${item.name}`} />
+                    <a href={`${item.url}`} rel='noreferrer' target="_blank" key={i}>
+                        <img 
+                            src={require(`../../assets/${item.icon}.png`)}
+                            style={{ width: "40px" }} 
+                            alt={`link to ${item.name}`}
+                            key={i} 
+                        />
                     </a>
             ))}
             </div>

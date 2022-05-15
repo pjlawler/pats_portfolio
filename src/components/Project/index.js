@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Project(props) {
     const {title, screenshot, technologies, url, github, index} = props
 
