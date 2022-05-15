@@ -10,7 +10,7 @@
 
  _ _ _
  ## *Description*
- ### This is my personal developer portfolio.  It was developed using React as an SPA and adaptable for mobile views. The app provides an About section with my personal contact info and social media links.  It also includes a portfolio section that displays several of my projects with links for their respective GitHub repository and a URL link to the deployed site or the URL where the app may be downloaded (i.e. The Apple App Store).
+ ### This is my personal developer portfolio submitted as my week 20 challenge for the UofM Fullstack Developer Bootcamp.  It was developed using React as an SPA and adaptable for mobile views. The app provides an About section with my personal contact info and social media links.  It also includes a portfolio section that displays several of my projects with links for their respective GitHub repository and a URL link to the deployed site or the URL where the app may be downloaded (i.e. The Apple App Store).
 
  ### Additionally there is a Contact section that allows the visitor directly send me an email right from the page. Finally in the Resume secion it displays a thumbnail imgage of my resume along with a link to download a pdf version.  Also listed on the same page are my proficiencies along with a rating to show my level of compentancy for each one.
 
