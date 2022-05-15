@@ -545,3 +545,30 @@ section {
   align-items: center;
 }
 
+@media screen and (max-width: 650px) {
+  .card-main {
+    flex-direction: column;
+  }
+
+  .project {
+    flex: 0 0 90%;
+  }
+  
+  .contact {
+    width: 95%;
+  }
+
+  .list-columns {
+    flex-direction: column-reverse;
+  }
+
+  .header {
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+
+  .page-header {
+    margin: 10px;
+  }
+}
