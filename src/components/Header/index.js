@@ -11,7 +11,7 @@ function Header(props) {
   // returns the jsx for  the header and includes the Navigation component
   return (
     <div className="flex-row header align-end">
-      <h2 className='title'><a href="/">Pat Lawler</a></h2>
+      <h2 className='title'><a>Pat Lawler</a></h2>
       <Nav navItems={navItems} currentNavItem={currentNavItem} setNavItem={setNavItem} />
     </div>
   );

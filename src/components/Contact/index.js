@@ -44,9 +44,6 @@ function Contact() {
         emailjs.sendForm('service_k8hqz3q', 'template_q0gacl4', form.current, 'idAsBdkTidnBYg100')
           .then((result) => {
               setErrorMessage('Success!');
-              setTimeout(() => {
-                  window.location ="/";
-              }, 1000)
           }, (error) => {
               setErrorMessage(error.text);
           });
