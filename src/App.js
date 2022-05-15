@@ -6,8 +6,6 @@ import Bio from './components/About'
 import Contact from './components/Contact'
 import Resume from './components/Resume'
 
-import './App.css';
-
 function App() {
 
   // array of the available pages to be displayed in the navigation bar

@@ -10,12 +10,15 @@
 
  _ _ _
  ## *Description*
- ### This is my personal developer portfolio. 
+ ### This is my personal developer portfolio.  It was developed using React as an SPA and adaptable for mobile views. The app provides an About section with my personal contact info and social media links.  It also includes a portfolio section that displays several of my projects with links for their respective GitHub repository and a URL link to the deployed site or the URL where the app may be downloaded (i.e. The Apple App Store).
+
+ ### Additionally there is a Contact section that allows the visitor directly send me an email right from the page. Finally in the Resume secion it displays a thumbnail imgage of my resume along with a link to download a pdf version.  Also listed on the same page are my proficiencies along with a rating to show my level of compentancy for each one.
+
  ![Screen Shot](./src/assets/screenshots/screen-shot.png)
  _ _ _
  
  ## *Installation Instructions*
-  From the command line %, use 'npm install' to install all required node modules for the listed dependencies and then 'npm run start' to start the React development server. The p 
+  From the command line %, use 'npm install' to install all required node modules for the listed dependencies and then 'npm run start' to start the React development server. The default port for viewing is http://localhost:3000. 
   - - -
  ## *Tests*
   N/A
