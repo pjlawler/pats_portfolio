@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/pats_portfolio/static/css/main.13158f68.css",
-    "main.js": "/pats_portfolio/static/js/main.3889ff50.js",
-    "static/media/travelers-screenshot.png": "/pats_portfolio/static/media/travelers-screenshot.78602dc490bef4e35680.png",
-    "static/media/learn-thai.png": "/pats_portfolio/static/media/learn-thai.012fe138767e10a77961.png",
-    "static/media/function-calc.png": "/pats_portfolio/static/media/function-calc.90019054296a6a74b1f9.png",
-    "static/media/pizza-hunt.png": "/pats_portfolio/static/media/pizza-hunt.bb1597d154dc10035238.png",
-    "static/media/guard-guys.png": "/pats_portfolio/static/media/guard-guys.c932448619f4cde45ce9.png",
-    "static/media/pjl.png": "/pats_portfolio/static/media/pjl.799ef2defaa6956b9f58.png",
-    "static/media/destination-briefing.png": "/pats_portfolio/static/media/destination-briefing.e42bd49322e51ca1cd5a.png",
-    "static/media/screen-shot.png": "/pats_portfolio/static/media/screen-shot.3e0f3ce4ee39cfab11af.png",
-    "static/media/pats_resume.svg": "/pats_portfolio/static/media/pats_resume.4743d31fdbeadb5066a0877043ac925b.svg",
-    "static/media/pats_resume.pdf": "/pats_portfolio/static/media/pats_resume.9d2114d139fd7aeec91e.pdf",
-    "static/media/github.png": "/pats_portfolio/static/media/github.feb06f8c95cbbb07743c.png",
-    "static/media/twitter.png": "/pats_portfolio/static/media/twitter.fa810f305752440d0260.png",
-    "static/media/linkedin.png": "/pats_portfolio/static/media/linkedin.01a4c433cb97e472ea3f.png",
-    "index.html": "/pats_portfolio/index.html",
-    "main.13158f68.css.map": "/pats_portfolio/static/css/main.13158f68.css.map",
-    "main.3889ff50.js.map": "/pats_portfolio/static/js/main.3889ff50.js.map"
+    "main.css": "/static/css/main.13158f68.css",
+    "main.js": "/static/js/main.0e76f198.js",
+    "static/media/travelers-screenshot.png": "/static/media/travelers-screenshot.78602dc490bef4e35680.png",
+    "static/media/learn-thai.png": "/static/media/learn-thai.012fe138767e10a77961.png",
+    "static/media/function-calc.png": "/static/media/function-calc.90019054296a6a74b1f9.png",
+    "static/media/pizza-hunt.png": "/static/media/pizza-hunt.bb1597d154dc10035238.png",
+    "static/media/guard-guys.png": "/static/media/guard-guys.c932448619f4cde45ce9.png",
+    "static/media/pjl.png": "/static/media/pjl.799ef2defaa6956b9f58.png",
+    "static/media/destination-briefing.png": "/static/media/destination-briefing.e42bd49322e51ca1cd5a.png",
+    "static/media/screen-shot.png": "/static/media/screen-shot.3e0f3ce4ee39cfab11af.png",
+    "static/media/pats_resume.svg": "/static/media/pats_resume.4743d31fdbeadb5066a0877043ac925b.svg",
+    "static/media/pats_resume.pdf": "/static/media/pats_resume.9d2114d139fd7aeec91e.pdf",
+    "static/media/github.png": "/static/media/github.feb06f8c95cbbb07743c.png",
+    "static/media/twitter.png": "/static/media/twitter.fa810f305752440d0260.png",
+    "static/media/linkedin.png": "/static/media/linkedin.01a4c433cb97e472ea3f.png",
+    "index.html": "/index.html",
+    "main.13158f68.css.map": "/static/css/main.13158f68.css.map",
+    "main.0e76f198.js.map": "/static/js/main.0e76f198.js.map"
   },
   "entrypoints": [
     "static/css/main.13158f68.css",
-    "static/js/main.3889ff50.js"
+    "static/js/main.0e76f198.js"
   ]
 }
