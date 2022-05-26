@@ -1,7 +1,7 @@
 {
   "name": "pats_portfolio",
   "version": "0.1.0",
-  "homepage": "http://pjlawler.github.io/pats_portfolio/",
+  "homepage": "https://patlawler.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
