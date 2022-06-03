@@ -6,20 +6,20 @@ function Portfolio() {
     // array of the projects to be displayed. Update these to update the portfolio
     const projects = [
         {
+            title: "Pespective News",
+            description: 'The site allows users to search news articles from a vast number of sources.  They may also save articles for later reading',
+            technologies: 'React, Node.js, Express, MongoDB, HTML, CSS, Javascript, Sequelize, JWT, GraphQL, bcrypt',
+            github: 'https://github.com/ItzGuled/perspective-news',
+            url: 'https://perspective-news.herokuapp.com/',
+            screenshot: 'perspective-news'
+        },
+        {
             title: "Traveler's Hidden Gems",
             description: "The site provides the user to collaborate with other users on the favorite travel locations. Users can post the locations they've discovered and other users can find locations on the map.",
             technologies: 'Node.js, Handlebars.js, Express, Express-session, MySQL, HTML, CSS, Javascript, Sequelize, dotenv, bcrypt',
             github: 'https://github.com/pjlawler/travelers-hidden-gems',
             url: 'https://sleepy-woodland-16634.herokuapp.com/',
             screenshot: 'travelers-screenshot'
-        },
-        {
-            title: 'Pizza Hunt',
-            description: "Week 19 project.",
-            technologies: 'MongoDB, Express.js, and IndexedDB',
-            github: 'https://github.com/pjlawler/pizza-hunt',
-            url: 'https://powerful-taiga-67670.herokuapp.com/',
-            screenshot: 'pizza-hunt'
         },
         {
             title: 'Destination Briefing',
