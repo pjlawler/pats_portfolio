@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.13158f68.css",
-    "main.js": "/static/js/main.0e76f198.js",
+    "main.js": "/static/js/main.4608ad5b.js",
     "static/media/travelers-screenshot.png": "/static/media/travelers-screenshot.78602dc490bef4e35680.png",
     "static/media/learn-thai.png": "/static/media/learn-thai.012fe138767e10a77961.png",
     "static/media/function-calc.png": "/static/media/function-calc.90019054296a6a74b1f9.png",
@@ -9,6 +9,7 @@
     "static/media/guard-guys.png": "/static/media/guard-guys.c932448619f4cde45ce9.png",
     "static/media/pjl.png": "/static/media/pjl.799ef2defaa6956b9f58.png",
     "static/media/destination-briefing.png": "/static/media/destination-briefing.e42bd49322e51ca1cd5a.png",
+    "static/media/perspective-news.png": "/static/media/perspective-news.31d52b0aebfef4a6567f.png",
     "static/media/screen-shot.png": "/static/media/screen-shot.3e0f3ce4ee39cfab11af.png",
     "static/media/pats_resume.svg": "/static/media/pats_resume.4743d31fdbeadb5066a0877043ac925b.svg",
     "static/media/pats_resume.pdf": "/static/media/pats_resume.9d2114d139fd7aeec91e.pdf",
@@ -17,10 +18,10 @@
     "static/media/linkedin.png": "/static/media/linkedin.01a4c433cb97e472ea3f.png",
     "index.html": "/index.html",
     "main.13158f68.css.map": "/static/css/main.13158f68.css.map",
-    "main.0e76f198.js.map": "/static/js/main.0e76f198.js.map"
+    "main.4608ad5b.js.map": "/static/js/main.4608ad5b.js.map"
   },
   "entrypoints": [
     "static/css/main.13158f68.css",
-    "static/js/main.0e76f198.js"
+    "static/js/main.4608ad5b.js"
   ]
 }
