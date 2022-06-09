@@ -3,20 +3,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Arial, Helvetica, sans-serif
+  font-family: 'Didact Gothic', sans-serif;
 }
   
 :root {
-  --dark: #181d31; /* rgb(24, 29, 49) */
-  --primary: #8c54ff;
-  --tertiary: #B12704;
+
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-  --light: #f0e9d2; /* rgb(240, 233, 210) */
-  --light2: #e6ddc4; /* rgb(230, 221, 196) */
-  --secondary: #678983; /* rgb(103, 137, 131) */
+
+
+  /* 385084 */
+
+  --secondary: #00143d;
+  --primary: #717a93;
+  /* --primary: #ffffff; */
+  --tertiary: #fefdfe;
+
   
 }
  
@@ -24,8 +28,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--secondary);
-  color: var(--dark);
+  background: var(--primary);
+  color: var(--tertiary);
 }
 
 h1,
@@ -41,7 +45,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 4.25rem;
 }
 
 h2 {
@@ -65,12 +69,12 @@ h6 {
 }
 
 p {
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   margin-top: 0;
 }
 
 a {
-  color: var(--dark);
+  color: var(--tertiary);
   text-decoration: none;
 }
 
@@ -79,25 +83,38 @@ a:hover {
 }
 
 .header {
-  background: var(--dark);
-  height: 100px;
-  width: 95%;
-  max-width: 1100px;
+  background: var(--secondary);
+  /* max-width: 1100px; */
+  width: 100%;
   padding: 10px;
-  position: fixed;
+  padding-bottom: 0px;
+  padding-top: 40px;
+  position: fixed
+}
+
+.header-items {
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .header a {
-  color: var(--light);
+  color: var(--tertiary);
 }
+
+.main-view {
+  min-height: 95vh;
+}
+
 
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--dark);
-  max-width: 1100px;
+  background: var(--secondary);
   margin: 0 auto;
+  height: 75px;
 }
 
 .footer a {
@@ -148,6 +165,11 @@ input:focus, textarea:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
+.nav-item {
+  font-size: 1.50em;
+  width: 150px;
+}
+
 nav a:hover {
   text-decoration: none;
 }
@@ -178,13 +200,13 @@ nav {
 
 
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .page-header {
-  margin-top: 110px;
+  margin-top: 125px;
   text-align: center;
 }
 
@@ -256,13 +278,13 @@ nav {
 }
 
 section {
-  min-height: 75vh;
+  /* min-height: 75vh; */
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background: var(--dark);
+  background: var(--secondary);
   padding: 2px;
   margin: 0 auto;
   margin: 10px;
@@ -278,7 +300,7 @@ section {
 .project {
   display: flex;
   flex-direction: column;
-  background: var(--dark);
+  background: var(--secondary);
   padding: 10px;
   margin: 10px;
   flex: 0 0 45%;
@@ -291,7 +313,7 @@ section {
   width: 100%;
   text-align: left;
   margin-left: 20px;
-  color: var(--light);
+  color: var(--tertiary);
 }
 
 .project-image {
@@ -307,23 +329,23 @@ section {
 
 .project .link-wrapper a {
   width: 75px;
-  color: var(--light);
+  color: var(--tertiary);
   font-size: 14px;
   margin: 20px;
   padding: 7px;
   text-align: center;
   border-radius: 10px;
-  border: var(--light) 1px solid;
+  border: var(--tertiary) 1px solid;
   text-decoration: none;
 }
 
 .project .link-wrapper a:hover {
-  color: var(--dark);
-  background: var(--light);
+  color: var(--secondary);
+  background: var(--tertiary);
 }
 
 .project-text {
-  color: var(--light);
+  color: var(--tertiary);
   font-size: 12px;
   width: 90%;
   margin: 0 auto;
@@ -332,7 +354,7 @@ section {
 
 .card-title {
   text-align: left;
-  color: var(--light);
+  color: var(--tertiary);
   margin-left: 20px;
 }
 
@@ -408,7 +430,7 @@ section {
 }
 
 .modalContainer {
-	background: var(--light);
+	background: var(--tertiary);
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
@@ -430,12 +452,12 @@ section {
 }
 
 .gallery-links a {
-  color: var(--light);
+  color: var(--tertiary);
 }
 
 .navActive {
-  background: var(--light);
-  color: var(--dark); 
+  background: var(--tertiary);
+  color: var(--secondary); 
   font-weight: 800;
  
 }
@@ -460,27 +482,27 @@ section {
 
 #contact-form button {
   width: 75px;
-  color: var(--light);
-  background: var(--dark);
+  color: var(--tertiary);
+  background: var(--secondary);
   font-size: 14px;
   padding: 7px;
   text-align: center;
   border-radius: 10px;
-  border: var(--light) 1px solid;
+  border: var(--tertiary) 1px solid;
 	cursor: pointer;
 }
 
 #contact-form button:hover {
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--tertiary);
+  color: var(--secondary);
 }
 
 .contact {
   width: 400px;
-  background: var(--dark);
+  background: var(--secondary);
   margin: 0 auto;
   padding: 20px;
-  color: var(--light);
+  color: var(--tertiary);
   font-size: 12px;
   border-radius: 20px;
 }
@@ -489,30 +511,30 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--dark);
+  background: var(--secondary);
   padding: 20px;
   border-radius: 20px;
 }
 
 .resume-wrapper a {
   width: 100px;
-  color: var(--light);
+  color: var(--tertiary);
   font-size: 14px;
   margin-top: 15px;
   padding: 7px;
   text-align: center;
   border-radius: 10px;
-  border: var(--light) 1px solid;
+  border: var(--tertiary) 1px solid;
   text-decoration: none;
 }
 
 .resume-wrapper a:hover {
-  color: var(--dark);
-  background: var(--light);
+  color: var(--secondary);
+  background: var(--tertiary);
 }
 
 .proficiencies-list {
-  color: var(--light);
+  color: var(--tertiary);
   list-style: none;
 }
 
@@ -526,7 +548,7 @@ section {
 .list-columns {
   display: flex;
   justify-content: space-evenly;
-  color: var(--light);
+  color: var(--tertiary);
   width: 90%;
 }
 

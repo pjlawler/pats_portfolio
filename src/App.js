@@ -27,16 +27,18 @@ function App() {
 
   // returns the jsx to be displayed on the page with the current page componenets based on the current nav item selected
   return (
-    <div className="container">
+      <>
       <Header navItems={navItems} currentNavItem={currentNavItem} setNavItem={setNavItem} />
+      <div className="container main-view">
       <br />
       {/* <p>A professional developer/coder who posseses an invaluable combination of education and experience coupled with an extreme passion and appitude for web/software developement</p> */}
       {currentNavItem === 'About Me' && (<Bio />)}
       {currentNavItem === 'Portfolio' && (<Gallery />)}
       {currentNavItem === 'Contact' && (<Contact />)}
       {currentNavItem === 'Resume' && (<Resume />)}
-      <Footer />
     </div>
+    <Footer />
+    </>
   );
 }
 

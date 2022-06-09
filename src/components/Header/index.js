@@ -1,5 +1,6 @@
 import React, { NavLink } from 'react';
 import Nav from '../Navigation'
+import bannerImage from "../../assets/banner.png"
 
 
 
@@ -10,9 +11,14 @@ function Header(props) {
 
   // returns the jsx for  the header and includes the Navigation component
   return (
-    <div className="flex-row header align-end">
-      <h2 className='title'><a>Pat Lawler</a></h2>
-      <Nav navItems={navItems} currentNavItem={currentNavItem} setNavItem={setNavItem} />
+    
+    <div className="header">
+      <div className="header-items">
+        <h1>Pat Lawler</h1>
+        <div className="flex-row align-end">
+          <Nav navItems={navItems} currentNavItem={currentNavItem} setNavItem={setNavItem} />
+        </div>
+      </div>
     </div>
   );
 }

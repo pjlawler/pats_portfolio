@@ -15,9 +15,9 @@ function About() {
   // returns the jsx for the about page
   return (
       <section className="my-5">
-          <h3 className='page-header'>About Me</h3>
+          <h3 className='page-header'></h3>
           <div className="card">
-            <h4 className="card-title">Pat's Bio</h4>
+            <h4 className="card-title"></h4>
             <div className="card-main">
               <div className="card-frame">
                   <img src={coverImage} style={{ width: "90%" }} alt="cover" />

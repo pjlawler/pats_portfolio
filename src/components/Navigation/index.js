@@ -13,7 +13,7 @@ function Navigation(props) {
           {navItems.map((navItem, i) => (
             <li
               // sets the class to navActive if its the current navItem
-              className={`mx-1 ${currentNavItem === navItem && 'navActive'}`}
+              className={`mx-1 nav-item ${currentNavItem === navItem && 'navActive'}`}
               key={i}
             >
               <span

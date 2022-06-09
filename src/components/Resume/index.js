@@ -1,5 +1,5 @@
 import React from "react";
-import resumeImage from '../../assets/pats_resume.svg'
+import resumeImage from '../../assets/pats_resume.png'
 
 
 
@@ -73,12 +73,12 @@ function Resume() {
     return (
         <div>
         <section className="my-5">
-            <h3 className='page-header'>My Resume</h3>
+            <h3 className='page-header'></h3>
             <div className="resume-wrapper">
                 
                 <div className="list-columns">
                     <div className="left">
-                        <h5>Proficiencies</h5>
+                        <h5>Coding Proficiencies</h5>
                         <ul className="proficiencies-list">
                             { proficiencies
                             .sort(function(a,b){return b.rating - a.rating})

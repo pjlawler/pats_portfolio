@@ -55,7 +55,7 @@ function Contact() {
     return (
         <div>
             <section className="my-5">
-            <h3 className='page-header'>Contact Me</h3>
+            <h3 className='page-header'></h3>
             <div className='contact'>
                 <form ref={form} id="contact-form" onSubmit={handleSubmit}>
                     <div className="form-textInput">
