@@ -14,7 +14,7 @@ function Header(props) {
     
     <div className="header">
       <div className="header-items">
-        <h1>Pat Lawler</h1>
+        <a href={'/'}><h1>Pat Lawler</h1></a>
         <div className="flex-row align-end">
           <Nav navItems={navItems} currentNavItem={currentNavItem} setNavItem={setNavItem} />
         </div>
