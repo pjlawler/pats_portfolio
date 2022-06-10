@@ -12,8 +12,8 @@ function App() {
   const [navItems] = useState([
     'About Me',
     'Portfolio',
-    'Contact',
-    'Resume'
+    'Resume',
+    'Contact'
    ]);
    
   // use state to keep track of the current page being displayed
