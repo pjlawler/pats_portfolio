@@ -1,4 +1,4 @@
-import coverImage from "../../assets/pjl.png"
+import coverImage from "../../assets/pat_circle.png"
 import React from 'react';
 
 
@@ -16,11 +16,11 @@ function About() {
   return (
       <section className="my-5">
           <h3 className='page-header'></h3>
-          <div className="card">
+          <div className="card bio-card">
             <h4 className="card-title"></h4>
             <div className="card-main">
               <div className="card-frame">
-                  <img src={coverImage} style={{ width: "90%" }} alt="cover" />
+                  <img src={coverImage} style={{ width: "75%" }} alt="cover" />
                   <h5>{contactInfo.name}</h5>
                   <ul>
                     <li><p>email: <a href={"mailto:".concat(contactInfo.email)}>{contactInfo.email}</a></p></li>
@@ -36,10 +36,10 @@ function About() {
                 <br />
                 <h5>Education</h5>
                 <ul>
-                  <li>Univeristy of Minnesota - Full-Stack Web Developer Bootcamp</li>
-                  <li>Embry-Riddle - Master's of Aeronautical Science</li>
-                  <li>Embry-Riddle - B.S.</li>
-                  <li>Lake Superior College - A.A.S.</li>
+                  <li>Full-Stack Web Developer Bootcamp - Univeristy of Minnesota</li>
+                  <li>Master's of Aeronautical Science - Embry-Riddle Aeronautical Univeristy</li>
+                  <li>Bachelor's of Sciencem - Embry-Riddle Aeronautical Univeristy</li>
+                  <li>Associate's of Applied Science - Lake Superior Colege</li>
                 </ul>
             </div>
           </div>

@@ -376,9 +376,7 @@ section {
 
 .card-main {
   display: flex;
-  background: var(--secondary);
   padding: 5px;
-  
 }
 
 .card-frame img {
@@ -566,6 +564,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bio-card {
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 650px) {
