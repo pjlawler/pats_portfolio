@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2d767fcd.css",
-    "main.js": "/static/js/main.12edd24e.js",
+    "main.js": "/static/js/main.473b57db.js",
     "static/media/travelers-screenshot.png": "/static/media/travelers-screenshot.78602dc490bef4e35680.png",
     "static/media/learn-thai.png": "/static/media/learn-thai.012fe138767e10a77961.png",
     "static/media/function-calc.png": "/static/media/function-calc.90019054296a6a74b1f9.png",
@@ -11,7 +11,7 @@
     "static/media/destination-briefing.png": "/static/media/destination-briefing.e42bd49322e51ca1cd5a.png",
     "static/media/perspective-news.png": "/static/media/perspective-news.31d52b0aebfef4a6567f.png",
     "static/media/screen-shot.png": "/static/media/screen-shot.3e0f3ce4ee39cfab11af.png",
-    "static/media/pat_circle.png": "/static/media/pat_circle.e98c3ae3de7e1b316f9b.png",
+    "static/media/pat_circle.png": "/static/media/pat_circle.fc3949d3dcc628847ca5.png",
     "static/media/pats_resume.png": "/static/media/pats_resume.e1e4d4d471ea83c66328.png",
     "static/media/pats_resume.pdf": "/static/media/pats_resume.968f6f7bd00c5fa1d669.pdf",
     "static/media/banner.png": "/static/media/banner.0e863dff548e832945a9.png",
@@ -20,10 +20,10 @@
     "static/media/linkedin.png": "/static/media/linkedin.01a4c433cb97e472ea3f.png",
     "index.html": "/index.html",
     "main.2d767fcd.css.map": "/static/css/main.2d767fcd.css.map",
-    "main.12edd24e.js.map": "/static/js/main.12edd24e.js.map"
+    "main.473b57db.js.map": "/static/js/main.473b57db.js.map"
   },
   "entrypoints": [
     "static/css/main.2d767fcd.css",
-    "static/js/main.12edd24e.js"
+    "static/js/main.473b57db.js"
   ]
 }
