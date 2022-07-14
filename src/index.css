@@ -384,14 +384,15 @@ section {
   margin: 0 auto;
 }
 
-.card-frame h5, .card-frame ul {
+.card-frame ul {
   margin-left: 20px;
   list-style: none;
   line-height: 1.5;
 }
 
 .card-frame h5 {
-  text-align: center;
+  margin-left: 37px;
+  text-align: left;
 }
 .card-body {
   flex: 8;
