@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d767fcd.css",
+    "main.css": "/static/css/main.01dbc2f2.css",
     "main.js": "/static/js/main.473b57db.js",
     "static/media/travelers-screenshot.png": "/static/media/travelers-screenshot.78602dc490bef4e35680.png",
     "static/media/learn-thai.png": "/static/media/learn-thai.012fe138767e10a77961.png",
@@ -19,11 +19,11 @@
     "static/media/twitter.png": "/static/media/twitter.fa810f305752440d0260.png",
     "static/media/linkedin.png": "/static/media/linkedin.01a4c433cb97e472ea3f.png",
     "index.html": "/index.html",
-    "main.2d767fcd.css.map": "/static/css/main.2d767fcd.css.map",
+    "main.01dbc2f2.css.map": "/static/css/main.01dbc2f2.css.map",
     "main.473b57db.js.map": "/static/js/main.473b57db.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d767fcd.css",
+    "static/css/main.01dbc2f2.css",
     "static/js/main.473b57db.js"
   ]
 }
