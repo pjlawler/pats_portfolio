@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.01dbc2f2.css",
-    "main.js": "/static/js/main.473b57db.js",
+    "main.js": "/static/js/main.3dfc123d.js",
     "static/media/travelers-screenshot.png": "/static/media/travelers-screenshot.78602dc490bef4e35680.png",
     "static/media/learn-thai.png": "/static/media/learn-thai.012fe138767e10a77961.png",
     "static/media/function-calc.png": "/static/media/function-calc.90019054296a6a74b1f9.png",
@@ -20,10 +20,10 @@
     "static/media/linkedin.png": "/static/media/linkedin.01a4c433cb97e472ea3f.png",
     "index.html": "/index.html",
     "main.01dbc2f2.css.map": "/static/css/main.01dbc2f2.css.map",
-    "main.473b57db.js.map": "/static/js/main.473b57db.js.map"
+    "main.3dfc123d.js.map": "/static/js/main.3dfc123d.js.map"
   },
   "entrypoints": [
     "static/css/main.01dbc2f2.css",
-    "static/js/main.473b57db.js"
+    "static/js/main.3dfc123d.js"
   ]
 }
