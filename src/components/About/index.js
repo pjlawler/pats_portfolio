@@ -28,18 +28,24 @@ function About() {
                   </ul>                  
               </div>
               <div className="card-body">
-                <p className="card-text">Retired as an Air Force Master Sergeant, Pat is currently persuing a career change as a web/software developer. He most recently worked an Airline Pilot and is now an endeavoring programmer/developer. He is currently attending the Univeristy of Minnesota's Coding Bootcamp focused on Full-Stack development including HTML, CSS, JavaScript, React, Node/NPM, VS Code, Git, mySQL, Firebase, and Heroku.  His expected completion date is June 2022.</p>
+                <p className="card-text">In June 2022, I completed the University of Minnesota's Coding Bootcamp focused on full-stack development including HTML, CSS, JavaScript, React, Node/NPM, VS Code, Git, mySQL, Firebase, and Heroku – and am actively pursuing a full-time, contract software developer role.</p>
                 <br />
-                <p  className="card-text">His programming journey started in high-school where he taught himself Basic while experimenting in his study-hall which just happened to be the school's computer lab. He continued his learning as he entered the military/workforce.  He soon evolved into learning Visual Basic and using Microsoft VBA for both Access and Excel - which also led to his mastering of Structured Query Language (SQL); along with the manipulation of the SQL through VBA.  Over the years, he has written several applications which he has incoproated into his jobs and used by his employers and emplohyees; including for professional military training tracking, sales management, flight school training record keeping, drug testing customer and collection database, and several data parsing programs for integration of enterprise systems.</p>
+                <p  className="card-text">My programming journey started in highs school where I taught myself Basic while experimenting in study hall, which just happened to be the school's computer lab.</p>
                 <br />
-                <p className="card-text">In 2015, he ventured into learning Apple's Swift and Xcode utilizing Storyboards and programmatically developing UX/UI. He has incorporated several different external APIs along with Apple's built in APIs including Core Data, iCloud Kit, Cocoa Pods, Core Location in iOS development. He currently has two apps published on the Apple App Store. He has also worked with extently with Java and Python.</p>               
+                <p className="card-text">I continued to learn about programming as I entered the military and soon elevated to learning Visual Basic and using Microsoft VBA for both Access and Excel. This allowed me to master Structured Query Language (SQL), along with the manipulation of the SQL through VBA.</p>
+                <br />
+                <p className="card-text">Over the years, I wrote several applications that were implemented and used by my employers and fellow employees; including a professional military training tracking software program, a sales management application, flight school training record keeping system, a drug testing customer and collection database, and several data parsing programs for integration of enterprise systems.</p>
+                <br />
+                <p className="card-text">In 2015, I ventured to learn Apple's Swift and Xcode utilizing Storyboards and programmatically developing UX/UI. I utilized several different external APIs along with Apple's built-in APIs including Core Data, iCloud Kit, Cocoa Pods, and Core Location in iOS development. </p>
+                <br />
+                <p className="card-text">I currently have two apps published on the Apple App Store and have also worked with extensively with Java and Python.</p>
                 <br />
                 <h5>Education</h5>
                 <ul>
-                  <li>Full-Stack Web Developer Bootcamp - Univeristy of Minnesota</li>
-                  <li>Master's of Aeronautical Science - Embry-Riddle Aeronautical Univeristy</li>
-                  <li>Bachelor's of Sciencem - Embry-Riddle Aeronautical Univeristy</li>
-                  <li>Associate's of Applied Science - Lake Superior Colege</li>
+                  <li>Graduate of Full-Stack Web Developer Bootcamp, Univeristy of Minnesota</li>
+                  <li>Master of Aeronautical Science, Embry-Riddle Aeronautical Univeristy</li>
+                  <li>Bachelor of Science, Embry-Riddle Aeronautical Univeristy</li>
+                  <li>Associate of Applied Science, Lake Superior Colege</li>
                 </ul>
             </div>
           </div>
