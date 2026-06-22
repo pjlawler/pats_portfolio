@@ -82,16 +82,16 @@ function RibbonRack() {
             title="Navy Enlisted Aviation Warfare Specialist insignia"
           />
           <img
-            className="rack__badge rack__badge--maint"
-            src={maintenanceBadge}
-            alt="Air Force Master Maintenance Badge"
-            title="Air Force Master Maintenance Badge"
-          />
-          <img
             className="rack__badge rack__badge--recruiter"
             src={recruiterBadge}
             alt="Army National Guard Master Recruiter Badge"
             title="Army National Guard Master Recruiter Badge"
+          />
+          <img
+            className="rack__badge rack__badge--maint"
+            src={maintenanceBadge}
+            alt="Air Force Master Maintenance Badge"
+            title="Air Force Master Maintenance Badge"
           />
         </div>
       </div>
