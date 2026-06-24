@@ -2,8 +2,7 @@ import { education } from '../data/education.js'
 
 function Education() {
   return (
-    <section id="education" className="section">
-      <h2 className="section__title">Education</h2>
+    <div className="panel">
       <div className="education">
         {education.map((item) => (
           <article key={item.school} className="edu">
@@ -13,7 +12,7 @@ function Education() {
           </article>
         ))}
       </div>
-    </section>
+    </div>
   )
 }
 

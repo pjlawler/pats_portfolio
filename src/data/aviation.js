@@ -1,20 +1,48 @@
-// Pilot qualifications. The training items below come from Pat's Professional
-// Pilot degree; replace the PLACEHOLDER certificates/hours with your real FAA
-// ratings and logged time.
-export const certificates = [
-  'Professional Pilot — Fixed-Wing',
-  'Professional Pilot — Rotary-Wing',
-  'FAA Certificate: [Private / Commercial / ATP] — PLACEHOLDER',
+// Pilot qualifications and ratings.
+
+// Short professional summary shown above the credential breakdown.
+export const summary = [
+  "Aviation has been one of Pat's passions since an early age. From his start as a military aviation mechanic to seven years as a line pilot for Endeavor Air, a Delta Connection carrier, his military service, education, and career have all centered on aviation. While flying the line, he volunteered on his pilots' union (ALPA) Preferential Bidding System (PBS) scheduling team.",
+  "With more than 4,500 total flight hours, he is a dual-rated pilot in both airplanes and helicopters, holding an Airline Transport Pilot certificate with flight-instructor ratings in each category. A Platinum Cirrus Instructor Pilot, he has spent more than ten years as a contract factory flight instructor for Cirrus Aircraft, and also holds a General Radiotelephone Operator License (GROL), backed by more than 20 years as a military avionics mechanic and instructor — including the Navy's prestigious AVIC-7 Avionics Engineering course.",
 ]
 
-export const ratings = [
-  'Fixed-Wing (Airplane)',
-  'Rotary-Wing (Helicopter)',
-  'Instrument / Type ratings — PLACEHOLDER',
-]
-
-export const stats = [
-  { label: 'Total Flight Hours', value: '0,000+' },
-  { label: 'Aircraft Categories', value: '2' },
-  { label: 'Years Around Aviation', value: '27+' },
+// Certificates and ratings grouped by aircraft category.
+export const quals = [
+  {
+    title: 'Airplane',
+    icon: 'plane',
+    items: [
+      'Airline Transport Pilot — Multi-Engine Land (AMEL)',
+      'Commercial Pilot — Single-Engine Land (ASEL)',
+      'Instrument Rating — Airplane',
+      'CFI / CFII / MEI — Flight & Instrument Instructor',
+      'CL-65 Type Rating',
+    ],
+  },
+  {
+    title: 'Helicopter',
+    icon: 'helicopter',
+    items: [
+      'Commercial Pilot — Rotorcraft Helicopter',
+      'Instrument Rating — Helicopter',
+      'CFI / CFII — Flight & Instrument Instructor',
+    ],
+  },
+  {
+    title: 'Cirrus Aircraft',
+    icon: 'award',
+    items: [
+      'Platinum Cirrus Instructor Pilot',
+      '10+ years as a contract factory flight instructor',
+    ],
+  },
+  {
+    title: 'Avionics & Licenses',
+    icon: 'avionics',
+    items: [
+      'General Radiotelephone Operator License (GROL)',
+      'Navy AVIC-7 Avionics Engineering Course — Honor Graduate',
+      '20+ years as a military avionics mechanic & instructor',
+    ],
+  },
 ]

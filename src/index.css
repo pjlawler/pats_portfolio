@@ -30,48 +30,11 @@ a {
   text-decoration: none;
 }
 
-/* Navbar */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  background: rgba(15, 17, 21, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-}
-
-.navbar__brand {
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.navbar__nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.navbar__nav a {
-  color: var(--muted);
-  transition: color 0.2s;
-}
-
-.navbar__nav a:hover {
-  color: var(--text);
-}
-
 /* Layout helpers */
 .section {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
-}
-
-.section--center {
-  text-align: center;
 }
 
 .section__title {
@@ -91,15 +54,55 @@ a {
   flex-wrap: wrap;
 }
 
+/* HUD / avionics-style framed photo */
+.hero__frame {
+  position: relative;
+  flex-shrink: 0;
+  padding: 14px;
+}
+
 .hero__photo {
+  display: block;
   width: 168px;
   height: auto;
-  border-radius: 16px;
+  border-radius: 4px;
   object-fit: cover;
-  border: 1px solid var(--border);
-  display: block;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  flex-shrink: 0;
+}
+
+.hero__tick {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent);
+}
+
+.hero__tick--tl {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.hero__tick--tr {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.hero__tick--bl {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.hero__tick--br {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
 }
 
 .hero__intro {
@@ -173,6 +176,161 @@ a {
   font-size: 1.05rem;
 }
 
+/* Developer section blocks */
+.dev-section {
+  margin-top: 2.75rem;
+}
+
+.dev-section__title {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Experience roles */
+.roles {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.role {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+}
+
+.role__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.role__title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.role__meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.role__points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.role__points li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.role__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Technical skills */
+.skills {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills__row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0.5rem 1rem;
+  align-items: start;
+}
+
+.skills__label {
+  padding-top: 0.3rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.skills__chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.skills__chips li {
+  padding: 0.3rem 0.7rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+/* Business services */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem;
+}
+
+.service-card__icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: rgba(91, 157, 255, 0.14);
+  color: var(--accent);
+}
+
+.service-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.service-card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.service-card__desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 /* Projects */
 .projects {
   display: grid;
@@ -230,34 +388,11 @@ a {
   font-size: 0.9rem;
 }
 
-/* Contact */
-.contact__text {
-  color: var(--muted);
-  margin: 0 auto 2rem;
-  max-width: 32rem;
-}
-
 /* Footer */
 .footer {
   border-top: 1px solid var(--border);
   padding: 2rem 1.5rem;
   text-align: center;
-}
-
-.footer__links {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.footer__links a {
-  color: var(--muted);
-  transition: color 0.2s;
-}
-
-.footer__links a:hover {
-  color: var(--text);
 }
 
 .footer__copy {
@@ -306,9 +441,83 @@ a {
   animation: tab-fade 0.25s ease;
 }
 
+/* Tab panel header with icon (30% larger than .section__title) */
+.tabs__title {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 0 2rem;
+  font-size: 2.275rem;
+  line-height: 1.1;
+}
+
+.tabs__title-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 11px;
+  background: rgba(91, 157, 255, 0.14);
+  color: var(--accent);
+}
+
+.tabs__title-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 @keyframes tab-fade {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Vertical tab layout — sidebar on the left, panel on the right */
+.tabs-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  scroll-margin-top: 70px;
+}
+
+.tabs--vertical {
+  flex: 0 0 200px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.25rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.tabs--vertical .tab {
+  width: 100%;
+  text-align: left;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  border: 1px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.tabs--vertical .tab:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.tabs--vertical .tab--active {
+  color: var(--accent);
+  background: var(--surface);
+  border-color: var(--border);
+  border-left-color: var(--accent);
+}
+
+.tabs-layout .tabs__panel {
+  flex: 1;
+  min-width: 0;
 }
 
 /* Pillars */
@@ -343,46 +552,68 @@ a {
   font-size: 0.95rem;
 }
 
-/* Aviation stats */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+/* Panel intro paragraph(s) */
+.panel__lead {
+  margin: 0 0 2.5rem;
+  max-width: 70ch;
 }
 
-.stat {
-  text-align: center;
-  padding: 1.5rem 1rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-}
-
-.stat__value {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.stat__label {
-  display: block;
-  margin-top: 0.25rem;
+.panel__lead p {
+  margin: 0 0 1rem;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
+}
+
+.panel__lead p:last-child {
+  margin-bottom: 0;
 }
 
 /* Qualifications */
 .quals {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.quals__group {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem 1.4rem;
+}
+
+.quals__header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.quals__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: rgba(91, 157, 255, 0.14);
+  color: var(--accent);
+}
+
+.quals__icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .quals__heading {
-  font-size: 1.1rem;
-  margin: 0 0 1rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .quals__list {
@@ -390,16 +621,25 @@ a {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 0.6rem;
+  gap: 0.55rem;
 }
 
 .quals__list li {
-  padding: 0.75rem 1rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 6px;
-  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.quals__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 /* Education */
@@ -487,91 +727,13 @@ a {
   margin-top: 1rem;
 }
 
-.rack__layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.rack__backing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3px;
-}
-
-/* Service badges, stacked to the right of the rack.
-   Equal width with .rack__ranks so the rack stays visually centered. */
-.rack__insignia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  width: calc(2 * var(--rw));
-}
-
-/* Rank insignia, stacked to the left of the rack (same width as badges). */
-.rack__ranks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  width: calc(2 * var(--rw));
-}
-
-/* Sized by height so the ranks match the badges' visual height */
-.rack__rank {
-  width: auto;
-  height: calc(0.95 * var(--rw));
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
-}
-
-.rack__badge {
-  height: auto;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
-}
-
-/* EAWS insignia is ~2.75" vs a 1.375" ribbon = 2 ribbons wide */
-.rack__badge--wings {
-  width: calc(2 * var(--rw));
-}
-
-/* AF maintenance badge is 1 5/8" vs a 1.375" ribbon ≈ 1.18 ribbons wide */
-.rack__badge--maint {
-  width: calc(1.18 * var(--rw));
-}
-
-/* ANG Recruiter badge is ~2" ≈ 1.5 ribbons wide */
-.rack__badge--recruiter {
-  width: calc(1.5 * var(--rw));
-}
-
-.rack__toprow {
-  display: flex;
-  justify-content: center;
-  gap: 3px;
-}
-
-.rack__grid {
-  display: grid;
-  grid-template-columns: repeat(3, var(--rw));
-  gap: 3px;
-}
-
-.rack__ribbon {
-  width: var(--rw);
-  line-height: 0;
-}
-
-.rack__ribbon img {
+/* The rank/ribbon/badge assembly is a single SVG that scales to fill the
+   text column while preserving its aspect ratio. */
+.rack__svg {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
 }
 
 .rack__note {
@@ -585,12 +747,35 @@ a {
   .panel {
     --rw: 96px;
   }
+
+  .skills__row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
 }
 
 /* Responsive */
-@media (max-width: 640px) {
-  .navbar__nav {
-    gap: 1rem;
-    font-size: 0.9rem;
+@media (max-width: 720px) {
+  .tabs-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .tabs--vertical {
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+  }
+
+  .tabs--vertical .tab {
+    width: auto;
+    border-left: 1px solid transparent;
+  }
+
+  .tabs--vertical .tab--active {
+    border-left-color: var(--border);
   }
 }

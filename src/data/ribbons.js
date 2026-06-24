@@ -2,7 +2,8 @@
 // NOTE: joint Navy/Air Force/Army precedence is complex — verify against your
 // DD-214 / records. Some specialized devices (Armed Forces Reserve Medal
 // hourglass + "M" devices, Coast Guard "O" device, AF Expeditionary gold
-// border) and the three Minnesota state ribbons are noted but not rendered.
+// border) are noted but not rendered. The three Minnesota state ribbons
+// follow all federal awards, per state precedence.
 export const ribbons = [
   { slug: 'af-commendation', name: 'Air Force Commendation Medal' },
   { slug: 'af-achievement', name: 'Air Force Achievement Medal' },
@@ -29,11 +30,8 @@ export const ribbons = [
   { slug: 'afrm', name: 'Armed Forces Reserve Medal (hourglass + 3 "M" devices)' },
   { slug: 'af-training', name: 'Air Force Training Ribbon' },
   { slug: 'army-service', name: 'Army Service Ribbon' },
-]
-
-// State awards (not rendered — not available as standard ribbon images):
-export const stateAwards = [
-  'Minnesota State Good Conduct Ribbon (3 devices)',
-  'Minnesota Distinguished Recruiting Ribbon (5 devices)',
-  'Minnesota State Service Medal (1 device)',
+  // Minnesota state awards — fall in after all federal awards (state precedence order).
+  { slug: 'mn-good-conduct', name: 'Minnesota State Good Conduct Ribbon (3 devices)' },
+  { slug: 'mn-distinguished-recruiting', name: 'Minnesota Distinguished Recruiting Ribbon (5 devices)' },
+  { slug: 'mn-service', name: 'Minnesota State Service Medal (1 device)' },
 ]
