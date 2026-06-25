@@ -3,29 +3,24 @@ function About() {
     <div className="panel">
       <div className="about__body">
         <p>
-          Pat Lawler doesn't fit neatly in a single box. He's a dual-rated
-          professional pilot and flight instructor, a working software
-          developer, a career
-          military veteran of the Iraq and Afghanistan wars, and the founder of
-          his own company — a blend of cockpit, codebase, and flight line that
-          very few people share.
+          These skills rarely live in the same person — and that's the point.
+          Each one sharpens the others: a pilot's procedural rigor shows up in
+          his code, an engineer's systems thinking shows up in the cockpit, and
+          a Human Factors background applies anywhere people and complex systems
+          meet.
         </p>
         <p>
-          What connects those worlds is how he thinks. At his core, Pat is a
-          problem solver. A career that began troubleshooting avionics under
-          pressure taught him to break complex systems down, find the real
-          problem, and fix it — then teach the next person to do the same.
-          Whether the system is an F-16's electronics, an augmented-reality app
-          for Apple Vision Pro, or a pilot in transition training, the approach
-          is the same: disciplined, systems-focused, and built to actually work.
+          At the center of it is a problem solver. Pat started out
+          troubleshooting avionics under pressure, where he learned to break a
+          complex system down, find the real problem, and fix it — then teach
+          the next person to do the same. Whether the system is an aircraft, an
+          augmented-reality app, or a pilot in transition training, the approach
+          doesn't change: methodical, calm, and built to actually work.
         </p>
         <p>
-          Aviation, software development, business, and military service are
-          what have honed Pat into who he is today. His business instincts run
-          as deep as his technical ones — he was leading teams and managing
-          operations long before his software career began. Across all of it
-          runs one throughline: a problem solver, builder, and instructor who
-          turns hard technical challenges into clear, working solutions.
+          It adds up to something rare — someone who can own a problem end to
+          end, from the smallest technical detail to the big picture, and turn
+          it into a clear, working solution.
         </p>
       </div>
     </div>

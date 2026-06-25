@@ -2,8 +2,8 @@
 
 // Short professional summary shown above the credential breakdown.
 export const summary = [
-  "Aviation has been one of Pat's passions since an early age. From his start as a military aviation mechanic to seven years as a line pilot for Endeavor Air, a Delta Connection carrier, his military service, education, and career have all centered on aviation. While flying the line, he volunteered on his pilots' union (ALPA) Preferential Bidding System (PBS) scheduling team.",
-  "With more than 4,500 total flight hours, he is a dual-rated pilot in both airplanes and helicopters, holding an Airline Transport Pilot certificate with flight-instructor ratings in each category. A Platinum Cirrus Instructor Pilot, he has spent more than ten years as a contract factory flight instructor for Cirrus Aircraft, and also holds a General Radiotelephone Operator License (GROL), backed by more than 20 years as a military avionics mechanic and instructor — including the Navy's prestigious AVIC-7 Avionics Engineering course.",
+  "Aviation has been one of Pat's passions since an early age. From his start as a military aviation mechanic to flying the line for Endeavor Air, a Delta Connection carrier, his military service, education, and career have all centered on aviation. While flying the line, he volunteered on his pilots' union (ALPA) Preferential Bidding System (PBS) scheduling team.",
+  "With more than 4,500 total flight hours, he is a dual-rated pilot in both airplanes and helicopters, holding an Airline Transport Pilot certificate with flight-instructor ratings in each category. A Platinum Cirrus Instructor Pilot, he has spent the better part of a decade as a contract factory flight instructor for Cirrus Aircraft, and also holds a General Radiotelephone Operator License (GROL), backed by a career as a military avionics mechanic and instructor — including the Navy's prestigious AVIC-7 Avionics Engineering course.",
 ]
 
 // Certificates and ratings grouped by aircraft category.
@@ -33,7 +33,7 @@ export const quals = [
     icon: 'award',
     items: [
       'Platinum Cirrus Instructor Pilot',
-      '10+ years as a contract factory flight instructor',
+      'Contract factory flight instructor for Cirrus Aircraft',
     ],
   },
   {
@@ -42,7 +42,7 @@ export const quals = [
     items: [
       'General Radiotelephone Operator License (GROL)',
       'Navy AVIC-7 Avionics Engineering Course — Honor Graduate',
-      '20+ years as a military avionics mechanic & instructor',
+      'Career military avionics mechanic & instructor',
     ],
   },
 ]

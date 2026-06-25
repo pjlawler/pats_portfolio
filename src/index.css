@@ -188,10 +188,11 @@ a {
 }
 
 .hero__tagline {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  line-height: 1.55;
   color: var(--muted);
   margin: 0 0 1.75rem;
-  max-width: 30rem;
+  max-width: 34rem;
 }
 
 .hero__title {
@@ -903,6 +904,10 @@ a {
     align-self: stretch;
   }
 
+  .tabs__panels {
+    align-self: stretch;
+  }
+
   /* Hamburger bar shows the current section + menu icon */
   .tabs__toggle {
     display: flex;
@@ -996,5 +1001,10 @@ a {
 
   .hero__actions {
     justify-content: center;
+  }
+
+  /* Education cards span full width to match the selector bar */
+  .education {
+    grid-template-columns: 1fr;
   }
 }

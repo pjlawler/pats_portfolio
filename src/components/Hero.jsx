@@ -16,8 +16,11 @@ function Hero() {
         <div className="hero__intro">
           <h1 className="hero__title">Pat Lawler</h1>
           <p className="hero__tagline">
-            Pilot, developer, and founder — I solve hard problems in the cockpit
-            and the codebase.
+            A proven business professional whose experience and skills can't
+            fit in a single box — a dual-rated pilot and full-stack software
+            engineer who holds a master's in Aeronautical Science (Human
+            Factors), backed by the discipline and attention to detail of a
+            long military career.
           </p>
           <div className="hero__actions">
             <a className="btn btn--primary" href="#contact">Get in touch</a>
