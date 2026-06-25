@@ -1,13 +1,13 @@
 import { ribbons } from '../data/ribbons.js'
-import eawsWings from '../assets/ribbons/eaws-wings.png'
-import recruiterBadge from '../assets/ribbons/recruiter-badge.png'
-import maintenanceBadge from '../assets/ribbons/maintenance-badge.png'
-import navyRank from '../assets/ribbons/navy-po2.png'
-import armyRank from '../assets/ribbons/army-ssg.png'
-import afRank from '../assets/ribbons/af-msgt.png'
+import eawsWings from '../assets/ribbons/eaws-wings.webp'
+import recruiterBadge from '../assets/ribbons/recruiter-badge.webp'
+import maintenanceBadge from '../assets/ribbons/maintenance-badge.webp'
+import navyRank from '../assets/ribbons/navy-po2.webp'
+import armyRank from '../assets/ribbons/army-ssg.webp'
+import afRank from '../assets/ribbons/af-msgt.webp'
 
 // Eagerly import every ribbon image, keyed by filename slug.
-const images = import.meta.glob('../assets/ribbons/*.png', {
+const images = import.meta.glob('../assets/ribbons/*.webp', {
   eager: true,
   query: '?url',
   import: 'default',
@@ -15,7 +15,7 @@ const images = import.meta.glob('../assets/ribbons/*.png', {
 
 function imgFor(slug) {
   const match = Object.entries(images).find(([path]) =>
-    path.endsWith(`/${slug}.png`),
+    path.endsWith(`/${slug}.webp`),
   )
   return match ? match[1] : null
 }

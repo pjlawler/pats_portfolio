@@ -1,4 +1,4 @@
-import serviceBadge from '../assets/service_badge.png'
+import serviceBadge from '../assets/service_badge.webp'
 import { synopsis } from '../data/service.js'
 import RibbonRack from './RibbonRack.jsx'
 
