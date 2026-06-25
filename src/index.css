@@ -1013,6 +1013,25 @@ a {
     grid-template-columns: 1fr;
     gap: 0.4rem;
   }
+
+  /* Keep the scoreboard on a single row instead of stacking */
+  .cred {
+    flex-wrap: nowrap;
+    padding: 0.9rem 1rem;
+  }
+
+  .cred__item {
+    padding: 0 1.1rem;
+  }
+
+  .cred__value {
+    font-size: 1.5rem;
+  }
+
+  .cred__label {
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+  }
 }
 
 /* Responsive */
