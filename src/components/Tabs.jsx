@@ -108,9 +108,6 @@ function Tabs() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
-  const activeTab = TABS.find((t) => t.id === active)
-  const ActivePanel = activeTab.Panel
-
   const selectTab = (id) => {
     setActive(id)
     window.history.replaceState(null, '', `#${id}`)
@@ -122,9 +119,11 @@ function Tabs() {
         {TABS.map((tab) => (
           <button
             key={tab.id}
+            id={`tab-${tab.id}`}
             type="button"
             role="tab"
             aria-selected={active === tab.id}
+            aria-controls={`panel-${tab.id}`}
             className={`tab${active === tab.id ? ' tab--active' : ''}`}
             onClick={() => selectTab(tab.id)}
           >
@@ -132,14 +131,30 @@ function Tabs() {
           </button>
         ))}
       </div>
-      <div className="tabs__panel" role="tabpanel" key={active}>
-        <h2 className="tabs__title">
-          <span className="tabs__title-icon">
-            <Icon name={activeTab.icon} />
-          </span>
-          {activeTab.label}
-        </h2>
-        <ActivePanel />
+      {/* All panels are rendered to the DOM (toggled with `hidden`) so the full
+          content is crawlable and shareable, not just the active tab. */}
+      <div className="tabs__panels">
+        {TABS.map((tab) => {
+          const Panel = tab.Panel
+          return (
+            <div
+              key={tab.id}
+              id={`panel-${tab.id}`}
+              role="tabpanel"
+              aria-labelledby={`tab-${tab.id}`}
+              className="tabs__panel"
+              hidden={active !== tab.id}
+            >
+              <h2 className="tabs__title">
+                <span className="tabs__title-icon">
+                  <Icon name={tab.icon} />
+                </span>
+                {tab.label}
+              </h2>
+              <Panel />
+            </div>
+          )
+        })}
       </div>
     </section>
   )

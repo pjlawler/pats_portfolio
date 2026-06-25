@@ -17,6 +17,8 @@ function Service() {
         className="service__crest"
         src={serviceBadge}
         alt="Servitio Dedicati service crest, 1985–2013"
+        loading="lazy"
+        decoding="async"
       />
     </div>
   )

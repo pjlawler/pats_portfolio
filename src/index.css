@@ -30,6 +30,40 @@ a {
   text-decoration: none;
 }
 
+/* Credibility band — quantified proof under the hero */
+.cred {
+  max-width: var(--max-width);
+  margin: 0 auto 1rem;
+  padding: 1.6rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.75rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.cred__item {
+  text-align: center;
+}
+
+.cred__value {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.cred__label {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Layout helpers */
 .section {
   max-width: var(--max-width);
@@ -54,20 +88,46 @@ a {
   flex-wrap: wrap;
 }
 
-/* HUD / avionics-style framed photo */
+/* HUD / avionics-style frame — the cutout portrait breaks up out of the box */
 .hero__frame {
   position: relative;
   flex-shrink: 0;
-  padding: 14px;
+  width: 270px;
+  height: 331px;
+}
+
+/* The framed "box": a subtle panel anchored to the bottom. The head rises
+   above its top edge, so Pat literally doesn't fit in the box. */
+.hero__box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 245px;
+  border-radius: 14px;
+  /* Soft spotlight so the dark suit separates from the near-black page */
+  background: radial-gradient(
+    115% 92% at 50% 26%,
+    rgba(70, 80, 100, 0.7),
+    rgba(34, 40, 50, 0.55) 46%,
+    rgba(15, 17, 21, 0) 82%
+  );
 }
 
 .hero__photo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   display: block;
-  width: 168px;
+  width: 270px;
   height: auto;
-  border-radius: 4px;
-  object-fit: cover;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  /* Lift the dark suit out of shadow + separate it from the panel */
+  filter: brightness(1.08) contrast(1.04) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.45));
+  /* Fade the waist-cropped bottom into the background so there's no hard edge */
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 97%);
+  mask-image: linear-gradient(to bottom, #000 70%, transparent 97%);
 }
 
 .hero__tick {
@@ -115,13 +175,11 @@ a {
   margin: 0 0 0.5rem;
 }
 
-.hero__roles {
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0 0 1rem;
+.hero__tagline {
+  font-size: 1.25rem;
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+  max-width: 30rem;
 }
 
 .hero__title {
@@ -388,6 +446,44 @@ a {
   font-size: 0.9rem;
 }
 
+/* Contact */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text);
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: var(--accent);
+}
+
+.contact-link__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(91, 157, 255, 0.14);
+  color: var(--accent);
+}
+
+.contact-link__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid var(--border);
@@ -515,9 +611,13 @@ a {
   border-left-color: var(--accent);
 }
 
-.tabs-layout .tabs__panel {
+.tabs-layout .tabs__panels {
   flex: 1;
   min-width: 0;
+}
+
+.tabs__panel[hidden] {
+  display: none;
 }
 
 /* Pillars */
