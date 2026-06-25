@@ -30,38 +30,44 @@ a {
   text-decoration: none;
 }
 
-/* Credibility band — quantified proof under the hero */
+/* Scoreboard strip at the top of the page */
 .cred {
   max-width: var(--max-width);
-  margin: 0 auto 1rem;
-  padding: 1.6rem 1.5rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.75rem;
-  border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
 .cred__item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0 2.75rem;
+}
+
+.cred__item + .cred__item {
+  border-left: 1px solid var(--border);
+}
+
+/* Eyebrow label above the figure */
+.cred__label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
 }
 
 .cred__value {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
   color: var(--accent);
-  line-height: 1.1;
-}
-
-.cred__label {
-  display: block;
-  margin-top: 0.3rem;
-  color: var(--muted);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Layout helpers */
@@ -683,8 +689,7 @@ a {
 .panel__banner {
   display: block;
   width: 100%;
-  height: 190px;
-  object-fit: cover;
+  height: auto;
   border-radius: 12px;
   margin-bottom: 2rem;
 }

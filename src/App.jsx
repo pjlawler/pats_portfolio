@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <main>
-        <Hero />
         <Credibility />
+        <Hero />
         <Tabs />
       </main>
       <Footer />

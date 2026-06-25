@@ -9,8 +9,8 @@ function Credibility() {
     <section className="cred" aria-label="By the numbers">
       {metrics.map((m) => (
         <div key={m.label} className="cred__item">
-          <span className="cred__value">{m.value}</span>
           <span className="cred__label">{m.label}</span>
+          <span className="cred__value">{m.value}</span>
         </div>
       ))}
     </section>

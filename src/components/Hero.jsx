@@ -17,7 +17,7 @@ function Hero() {
           <h1 className="hero__title">Pat Lawler</h1>
           <p className="hero__tagline">
             A proven business professional whose experience and skills can't
-            fit in a single box — a dual-rated pilot and full-stack software
+            fit into a single box — a dual-rated pilot and full-stack software
             engineer who holds a master's in Aeronautical Science (Human
             Factors), backed by the discipline and attention to detail of a
             long military career.

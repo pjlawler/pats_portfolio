@@ -1,8 +1,10 @@
+import developerBanner from '../assets/developer-banner.webp'
 import { experience, projects, skills, summary } from '../data/developer.js'
 
 function Developer() {
   return (
     <div className="panel">
+      <img className="panel__banner" src={developerBanner} alt="" loading="lazy" />
       <div className="panel__lead">
         {summary.map((para, i) => (
           <p key={i}>{para}</p>

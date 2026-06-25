@@ -1,4 +1,4 @@
-import aviationBanner from '../assets/aviation-banner.jpg'
+import aviationBanner from '../assets/aviation-banner.webp'
 import { quals, summary } from '../data/aviation.js'
 
 // Inline line icons (stroke = currentColor) so they pick up the accent color.
