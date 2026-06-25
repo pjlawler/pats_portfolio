@@ -76,11 +76,23 @@ a {
   margin: 0 0 2rem;
 }
 
-/* Hero */
+/* Hero — full-bleed aviation atmosphere behind the content */
 .hero {
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15, 17, 21, 0.28) 0%,
+      rgba(15, 17, 21, 0.55) 55%,
+      rgba(15, 17, 21, 0.96) 100%
+    ),
+    url('./assets/aviation-hero.jpg') center 64% / cover no-repeat;
+}
+
+.hero__inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 3rem 1.5rem 1.5rem;
+  padding: 3.5rem 1.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -576,8 +588,19 @@ a {
   scroll-margin-top: 70px;
 }
 
-.tabs--vertical {
+/* Tab nav column (desktop) — becomes a hamburger dropdown on mobile */
+.tabs-nav {
   flex: 0 0 200px;
+  align-self: flex-start;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.tabs__toggle {
+  display: none;
+}
+
+.tabs--vertical {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -586,8 +609,6 @@ a {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
-  position: sticky;
-  top: 1.5rem;
 }
 
 .tabs--vertical .tab {
@@ -650,6 +671,16 @@ a {
   margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+/* Banner image at the top of a tab panel */
+.panel__banner {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
 /* Panel intro paragraph(s) */
@@ -861,21 +892,104 @@ a {
     gap: 1.5rem;
   }
 
-  .tabs--vertical {
+  .tabs-nav {
     flex: none;
-    flex-direction: row;
-    flex-wrap: wrap;
     position: static;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 1rem;
+    align-self: stretch;
+  }
+
+  /* Hamburger bar shows the current section + menu icon */
+  .tabs__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 0.7rem 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  /* The selector bar doubles as the section title */
+  .tabs__toggle-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+
+  .tabs__toggle-chip {
+    display: grid;
+    place-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 9px;
+    background: rgba(91, 157, 255, 0.14);
+    color: var(--accent);
+  }
+
+  .tabs__toggle-chip svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  /* Hide the in-panel title on mobile — the selector bar is the title */
+  .tabs__title {
+    display: none;
+  }
+
+  .tabs__toggle-icon {
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+  }
+
+  .tabs__toggle-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* The tab list collapses into a dropdown, shown only when open */
+  .tabs--vertical {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+  }
+
+  .tabs--vertical.is-open {
+    display: flex;
   }
 
   .tabs--vertical .tab {
-    width: auto;
-    border-left: 1px solid transparent;
+    width: 100%;
+    text-align: left;
   }
 
-  .tabs--vertical .tab--active {
-    border-left-color: var(--border);
+  /* Stack and center the hero on mobile */
+  .hero__inner {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .hero__intro {
+    max-width: 100%;
+  }
+
+  .hero__tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__actions {
+    justify-content: center;
   }
 }

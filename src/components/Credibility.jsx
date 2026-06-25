@@ -2,8 +2,6 @@
 const metrics = [
   { value: '4,500+', label: 'Flight Hours' },
   { value: '12+', label: 'Apps Shipped' },
-  { value: '27 yrs', label: 'Military Service' },
-  { value: '3', label: 'Branches Served' },
 ]
 
 function Credibility() {

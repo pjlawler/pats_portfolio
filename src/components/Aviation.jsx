@@ -1,3 +1,4 @@
+import aviationBanner from '../assets/aviation-banner.jpg'
 import { quals, summary } from '../data/aviation.js'
 
 // Inline line icons (stroke = currentColor) so they pick up the accent color.
@@ -50,6 +51,7 @@ function Icon({ name }) {
 function Aviation() {
   return (
     <div className="panel">
+      <img className="panel__banner" src={aviationBanner} alt="" loading="lazy" />
       <div className="panel__lead">
         {summary.map((para, i) => (
           <p key={i}>{para}</p>

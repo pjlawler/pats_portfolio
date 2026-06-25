@@ -59,6 +59,20 @@ const ICONS = {
       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
     </>
   ),
+  // Mobile menu toggle.
+  menu: (
+    <>
+      <path d="M3 6h18" />
+      <path d="M3 12h18" />
+      <path d="M3 18h18" />
+    </>
+  ),
+  close: (
+    <>
+      <path d="M18 6 6 18" />
+      <path d="M6 6l12 12" />
+    </>
+  ),
 }
 
 function Icon({ name }) {
@@ -91,6 +105,8 @@ const isTab = (id) => TABS.some((t) => t.id === id)
 
 function Tabs() {
   const sectionRef = useRef(null)
+  const navRef = useRef(null)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [active, setActive] = useState(() => {
     const hash = typeof window !== 'undefined' ? window.location.hash.slice(1) : ''
     return isTab(hash) ? hash : 'about'
@@ -108,28 +124,72 @@ function Tabs() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
+  // Close the mobile dropdown on outside click or Escape.
+  useEffect(() => {
+    if (!menuOpen) return
+    const onPointer = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) setMenuOpen(false)
+    }
+    const onKey = (e) => {
+      if (e.key === 'Escape') setMenuOpen(false)
+    }
+    document.addEventListener('pointerdown', onPointer)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('pointerdown', onPointer)
+      document.removeEventListener('keydown', onKey)
+    }
+  }, [menuOpen])
+
   const selectTab = (id) => {
     setActive(id)
+    setMenuOpen(false)
     window.history.replaceState(null, '', `#${id}`)
   }
 
+  const current = TABS.find((t) => t.id === active)
+
   return (
     <section id="experience" ref={sectionRef} className="section tabs-layout">
-      <div className="tabs tabs--vertical" role="tablist" aria-orientation="vertical">
-        {TABS.map((tab) => (
-          <button
-            key={tab.id}
-            id={`tab-${tab.id}`}
-            type="button"
-            role="tab"
-            aria-selected={active === tab.id}
-            aria-controls={`panel-${tab.id}`}
-            className={`tab${active === tab.id ? ' tab--active' : ''}`}
-            onClick={() => selectTab(tab.id)}
-          >
-            {tab.label}
-          </button>
-        ))}
+      <div className="tabs-nav" ref={navRef}>
+        <button
+          type="button"
+          className="tabs__toggle"
+          aria-expanded={menuOpen}
+          aria-controls="tabs-tablist"
+          onClick={() => setMenuOpen((o) => !o)}
+        >
+          <span className="tabs__toggle-title">
+            <span className="tabs__toggle-chip">
+              <Icon name={current.icon} />
+            </span>
+            {current.label}
+          </span>
+          <span className="tabs__toggle-icon">
+            <Icon name={menuOpen ? 'close' : 'menu'} />
+          </span>
+        </button>
+        <div
+          id="tabs-tablist"
+          className={`tabs tabs--vertical${menuOpen ? ' is-open' : ''}`}
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          {TABS.map((tab) => (
+            <button
+              key={tab.id}
+              id={`tab-${tab.id}`}
+              type="button"
+              role="tab"
+              aria-selected={active === tab.id}
+              aria-controls={`panel-${tab.id}`}
+              className={`tab${active === tab.id ? ' tab--active' : ''}`}
+              onClick={() => selectTab(tab.id)}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
       </div>
       {/* All panels are rendered to the DOM (toggled with `hidden`) so the full
           content is crawlable and shareable, not just the active tab. */}
