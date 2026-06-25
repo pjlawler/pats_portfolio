@@ -539,6 +539,11 @@ a {
   color: var(--text);
 }
 
+.tab:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .tab--active {
   color: #0b0d10;
   background: var(--accent);

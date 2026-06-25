@@ -147,6 +147,21 @@ function Tabs() {
     window.history.replaceState(null, '', `#${id}`)
   }
 
+  // Arrow-key navigation across the tablist (ARIA tabs pattern, automatic activation).
+  const onTabKeyDown = (e) => {
+    const i = TABS.findIndex((t) => t.id === active)
+    let next = null
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') next = (i + 1) % TABS.length
+    else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') next = (i - 1 + TABS.length) % TABS.length
+    else if (e.key === 'Home') next = 0
+    else if (e.key === 'End') next = TABS.length - 1
+    if (next === null) return
+    e.preventDefault()
+    const id = TABS[next].id
+    selectTab(id)
+    requestAnimationFrame(() => document.getElementById(`tab-${id}`)?.focus())
+  }
+
   const current = TABS.find((t) => t.id === active)
 
   return (
@@ -174,6 +189,7 @@ function Tabs() {
           className={`tabs tabs--vertical${menuOpen ? ' is-open' : ''}`}
           role="tablist"
           aria-orientation="vertical"
+          onKeyDown={onTabKeyDown}
         >
           {TABS.map((tab) => (
             <button
@@ -183,6 +199,7 @@ function Tabs() {
               role="tab"
               aria-selected={active === tab.id}
               aria-controls={`panel-${tab.id}`}
+              tabIndex={active === tab.id ? 0 : -1}
               className={`tab${active === tab.id ? ' tab--active' : ''}`}
               onClick={() => selectTab(tab.id)}
             >
