@@ -14,4 +14,9 @@ export const education = [
     degree: 'A.A.S. Professional Pilot',
     detail: 'Associate of Applied Science — Fixed-Wing and Rotary-Wing.',
   },
+  {
+    school: 'University of Minnesota',
+    degree: 'Full-Stack Developer Bootcamp',
+    detail: '6-month intensive program — graduated with a 99.48% grade.',
+  },
 ]

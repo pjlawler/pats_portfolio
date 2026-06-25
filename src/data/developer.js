@@ -1,7 +1,8 @@
 // Developer / software-engineering content, sourced from Pat's resume.
 export const summary = [
-  'A natural and passionate programmer with over ten years of experience building software that transforms operations. Pat has created more than a dozen applications and tools that streamlined work for multiple organizations, and graduated from the University of Minnesota Full-Stack Developer Bootcamp with a 99.48% grade.',
-  "He specializes in iOS development with Swift and SwiftUI, including Augmented Reality applications for Apple Vision Pro. A former military avionics troubleshooter and instructor, he brings a systems-focused discipline to high-stakes technical problems and a teacher's ability to convey complex ideas clearly.",
+  'A natural and passionate programmer with over ten years of experience building software that transforms operations. Pat has created more than a dozen applications and tools that streamlined work for multiple organizations.',
+  "For nearly four years he has led the mobile team for Cirrus Approach in iOS development, working Agile with CI/CD pipelines. His foundation pairs that native iOS experience in Swift and SwiftUI — including Augmented Reality for Apple Vision Pro — with his formal full-stack training. Coupling that experience with the power of agentic coding and AI tooling — Cursor, Claude Code, and Xcode's agentic coding — he has migrated to an AI-first methodology that dramatically increases his speed and efficiency. The result reaches well beyond iOS: he can now quickly build, test, and ship virtually any type of project across nearly any language or stack.",
+  "A former military avionics troubleshooter and instructor, he brings a systems-focused discipline to high-stakes technical problems and a teacher's ability to convey complex ideas clearly.",
 ]
 
 export const experience = [
@@ -38,6 +39,10 @@ export const skills = [
   {
     group: 'Databases',
     items: ['SQL', 'MySQL', 'NoSQL', 'MongoDB'],
+  },
+  {
+    group: 'AI Development',
+    items: ['Cursor', 'Claude Code', 'Xcode Agentic Coding', 'AI-First Workflow'],
   },
   {
     group: 'Tools',
