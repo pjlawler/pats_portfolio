@@ -1,4 +1,4 @@
-import businessBanner from '../assets/business-banner.jpg'
+import businessBanner from '../assets/business-banner.webp'
 import { summary, ventures } from '../data/business.js'
 
 function Business() {
