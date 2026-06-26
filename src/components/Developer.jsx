@@ -1,5 +1,5 @@
 import developerBanner from '../assets/developer-banner.webp'
-import { experience, projects, skills, summary } from '../data/developer.js'
+import { experience, skills, summary } from '../data/developer.js'
 
 function Developer() {
   return (
@@ -22,11 +22,21 @@ function Developer() {
                   {job.org} · {job.period}
                 </span>
               </div>
-              <ul className="role__points">
-                {job.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
+              {job.link && (
+                <a className="role__link" href={job.link} target="_blank" rel="noreferrer">
+                  lawlerinnovationsinc.com →
+                </a>
+              )}
+              {job.subroles.map((sub) => (
+                <div key={sub.title} className="subrole">
+                  <h5 className="subrole__title">{sub.title}</h5>
+                  <ul className="role__points">
+                    {sub.points.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </article>
           ))}
         </div>
@@ -48,27 +58,6 @@ function Developer() {
         </div>
       </section>
 
-      <section className="dev-section">
-        <h3 className="dev-section__title">Featured Projects</h3>
-        <div className="projects">
-          {projects.map((project) => (
-            <article key={project.title} className="card">
-              <h4 className="card__title">{project.title}</h4>
-              <p className="card__desc">{project.description}</p>
-              <ul className="card__tags">
-                {project.tags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
-              {project.link && (
-                <a className="card__link" href={project.link} target="_blank" rel="noreferrer">
-                  View project →
-                </a>
-              )}
-            </article>
-          ))}
-        </div>
-      </section>
     </div>
   )
 }
