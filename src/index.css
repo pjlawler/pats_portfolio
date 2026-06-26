@@ -1032,9 +1032,6 @@ a {
   .tabs-layout {
     flex-direction: column;
     gap: 1.5rem;
-    /* On mobile the nav is a hamburger bar at the section top — sit it flush at
-       the top of the screen when a tab is selected. */
-    scroll-margin-top: 0;
   }
 
   .tabs-nav {

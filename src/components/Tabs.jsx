@@ -115,14 +115,25 @@ function Tabs() {
   useEffect(() => {
     const onHashChange = () => {
       const hash = window.location.hash.slice(1)
-      if (isTab(hash)) {
-        setActive(hash)
-        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
+      if (isTab(hash)) setActive(hash)
     }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
+
+  // After a tab change, bring it into view from the top. Runs as an effect (after
+  // the new panel has rendered) so there's enough scroll range to reach the top.
+  // Desktop: the tabs section top; mobile: the hamburger bar flush at the top.
+  const firstRender = useRef(true)
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false
+      return
+    }
+    const mobile = window.matchMedia('(max-width: 720px)').matches
+    const target = mobile ? navRef.current : sectionRef.current
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [active])
 
   // Close the mobile dropdown on outside click or Escape.
   useEffect(() => {
@@ -145,10 +156,8 @@ function Tabs() {
     setActive(id)
     setMenuOpen(false)
     window.history.replaceState(null, '', `#${id}`)
-    // Bring the new tab into view from the top: on desktop this lifts the panel
-    // content up; on mobile (static nav) it brings the menu bar to the top of the
-    // screen (scroll-margin-top is zeroed on mobile so it sits flush).
-    sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // Scrolling is handled by the effect on `active` so it runs after the new
+    // panel renders (see above).
   }
 
   // Arrow-key navigation across the tablist (ARIA tabs pattern, automatic activation).
