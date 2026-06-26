@@ -302,6 +302,70 @@ a {
   font-size: 0.85rem;
 }
 
+/* Collapsible experience card */
+.role__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.role__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.role__toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.role__chevron {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.role__chevron svg {
+  width: 18px;
+  height: 18px;
+}
+
+.role--open .role__chevron {
+  transform: rotate(180deg);
+}
+
+.role__detail {
+  margin-top: 1.25rem;
+}
+
+.role__detail p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.role__detail p:last-child {
+  margin-bottom: 0;
+}
+
+.role__detail .lead-block + p {
+  margin-top: 1.5rem;
+}
+
 .role__points {
   list-style: none;
   margin: 0;
@@ -416,8 +480,11 @@ a {
 }
 
 .venture {
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
-  padding-left: 1.1rem;
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
 }
 
 .venture__head {
@@ -426,12 +493,33 @@ a {
   align-items: baseline;
   justify-content: space-between;
   gap: 0.15rem 1rem;
-  margin-bottom: 0.4rem;
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.venture__head:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .venture__title {
   margin: 0;
   font-size: 1.15rem;
+}
+
+.venture__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .venture__period {
@@ -440,8 +528,24 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
+.venture__chevron {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.venture__chevron svg {
+  width: 18px;
+  height: 18px;
+}
+
+.venture--open .venture__chevron {
+  transform: rotate(180deg);
+}
+
 .venture__body {
-  margin: 0;
+  margin: 1rem 0 0;
   color: var(--muted);
   font-size: 1rem;
   max-width: 70ch;
@@ -809,6 +913,17 @@ a {
 
 .panel__lead p:last-child {
   margin-bottom: 0;
+}
+
+.lead-block + .lead-block {
+  margin-top: 1.5rem;
+}
+
+.lead-block__heading {
+  margin: 0 0 0.6rem;
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 /* Qualifications */
