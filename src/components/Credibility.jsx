@@ -2,6 +2,7 @@
 const metrics = [
   { value: '4,500+', label: 'Flight Hours' },
   { value: '12+', label: 'Apps Shipped' },
+  { value: '3', label: 'Businesses' },
 ]
 
 function Credibility() {

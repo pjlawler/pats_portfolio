@@ -92,9 +92,7 @@ function Contact() {
   return (
     <div className="panel">
       <p className="panel__lead">
-        Have a project in mind, need a contract pilot or instructor, or want
-        consulting that spans aviation and software? Reach out — Pat is always
-        glad to connect.
+        Feel free to reach out and connect!
       </p>
 
       {status === 'success' ? (
