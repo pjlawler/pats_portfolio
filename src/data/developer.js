@@ -21,7 +21,7 @@ export const experience = [
           'Builds with SwiftUI, Swift, CocoaPods, and web technologies (HTML/CSS/JS).',
           'Manages 25+ RESTful API integrations across Cirrus, Apple iTunes, and Vimeo services.',
           'Integrated Augmented Reality for Apple Vision Pro and iPad to create immersive experiences.',
-          'Serves as a Cirrus Instructor subject-matter expert throughout the design process.',
+          'Serves as a Cirrus Standardized Instructor subject-matter expert throughout the design process.',
           'Works in Agile with Azure DevOps; ships via TestFlight and the App Store.',
         ],
       },
