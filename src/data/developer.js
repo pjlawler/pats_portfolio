@@ -16,7 +16,7 @@ export const experience = [
         title: 'Lawler Innovations Inc',
         link: 'https://lawlerinnovationsinc.com',
         points: [
-          'Designed and built the full-stack Lawler Innovations Inc website.',
+          'Designed, built, and maintains the full-stack Lawler Innovations Inc website.',
         ],
       },
       {
@@ -35,9 +35,9 @@ export const experience = [
         title: 'GuardGuys LLC',
         meta: '2020 – Present',
         points: [
-          'Designed and built the full-stack GuardGuys LLC website.',
-          'Designed and built the full-stack 911DrugTest Network website.',
-          'Developed and maintains a proprietary scheduling iOS app for the business.',
+          'Designed and built the initial full-stack GuardGuys LLC website.',
+          'Designed, built, and maintains the full-stack 911DrugTest Network website.',
+          'Developed and maintains a proprietary full-stack scheduling website and iOS app for the business.',
         ],
       },
       {
