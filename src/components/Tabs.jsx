@@ -145,6 +145,10 @@ function Tabs() {
     setActive(id)
     setMenuOpen(false)
     window.history.replaceState(null, '', `#${id}`)
+    // Bring the new tab into view from the top: on desktop this lifts the panel
+    // content up; on mobile (static nav) it brings the menu bar to the top of the
+    // screen (scroll-margin-top is zeroed on mobile so it sits flush).
+    sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   // Arrow-key navigation across the tablist (ARIA tabs pattern, automatic activation).
