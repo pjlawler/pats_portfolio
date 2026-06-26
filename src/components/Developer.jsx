@@ -29,7 +29,10 @@ function Developer() {
               )}
               {job.subroles.map((sub) => (
                 <div key={sub.title} className="subrole">
-                  <h5 className="subrole__title">{sub.title}</h5>
+                  <div className="subrole__head">
+                    <h5 className="subrole__title">{sub.title}</h5>
+                    {sub.meta && <span className="subrole__meta">{sub.meta}</span>}
+                  </div>
                   <ul className="role__points">
                     {sub.points.map((point) => (
                       <li key={point}>{point}</li>

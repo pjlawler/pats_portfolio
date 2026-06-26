@@ -8,13 +8,14 @@ export const summary = [
 
 export const experience = [
   {
-    role: 'Software Engineer',
+    role: 'Principal Software Engineer',
     org: 'Lawler Innovations Inc',
     period: '2014 – Present',
     link: 'https://lawlerinnovationsinc.com',
     subroles: [
       {
         title: 'Lead iOS Developer',
+        meta: 'Cirrus Aircraft · 2023 – Present',
         points: [
           'Independent contractor leading the Cirrus Approach LMS iOS app update project.',
           'Builds with SwiftUI, Swift, CocoaPods, and web technologies (HTML/CSS/JS).',
@@ -25,7 +26,7 @@ export const experience = [
         ],
       },
       {
-        title: 'Independent Software Developer',
+        title: 'Other Projects',
         points: [
           'Developed and maintains the public iOS apps FunctionCalc and Learn Thai – Alphabet.',
           'Designed and built the full-stack GuardGuys LLC website and its proprietary scheduling iOS app.',

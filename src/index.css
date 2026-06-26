@@ -340,10 +340,24 @@ a {
   margin-top: 1.4rem;
 }
 
+.subrole__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.15rem 1rem;
+  margin-bottom: 0.7rem;
+}
+
 .subrole__title {
-  margin: 0 0 0.7rem;
+  margin: 0;
   font-size: 0.98rem;
   color: var(--text);
+}
+
+.subrole__meta {
+  color: var(--muted);
+  font-size: 0.8rem;
 }
 
 /* Technical skills */
