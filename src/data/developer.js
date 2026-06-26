@@ -14,22 +14,32 @@ export const experience = [
     link: 'https://lawlerinnovationsinc.com',
     subroles: [
       {
-        title: 'Lead iOS Developer',
-        meta: 'Cirrus Aircraft · 2023 – Present',
+        title: 'Cirrus Aircraft LMS Project',
+        meta: '2023 – Present',
         points: [
-          'Independent contractor leading the Cirrus Approach LMS iOS app update project.',
+          'Independent contractor leading the iOS app update project.',
           'Builds with SwiftUI, Swift, CocoaPods, and web technologies (HTML/CSS/JS).',
           'Manages 25+ RESTful API integrations across Cirrus, Apple iTunes, and Vimeo services.',
           'Integrated Augmented Reality for Apple Vision Pro and iPad to create immersive experiences.',
-          'Serves as a Cirrus Instructor subject-matter expert throughout the design process.',
+          'Serves as a Cirrus Pilot/Instructor subject-matter expert throughout the design process.',
           'Works in Agile with Azure DevOps; ships via TestFlight and the App Store.',
+        ],
+      },
+      {
+        title: 'GuardGuys LLC',
+        meta: '2020 – Present',
+        points: [
+          'Designed and built the full-stack GuardGuys LLC website.',
+          'Designed and built the full-stack 911DrugTest Network website.',
+          'Developed and maintains a proprietary scheduling iOS app for the business.',
         ],
       },
       {
         title: 'Other Projects',
         points: [
-          'Developed and maintains the public iOS apps FunctionCalc and Learn Thai – Alphabet.',
-          'Designed and built the full-stack GuardGuys LLC website and its proprietary scheduling iOS app.',
+          'Designed, created, and maintains the iOS app FunctionCalc.',
+          'Designed, created, and maintains the iOS app Learn Thai – Alphabet.',
+          'Designed, created, and maintains the iOS app CalorieCalc – Averaging.',
           'Created Microsoft Access and Excel VBA tools that streamlined operations for Endeavor Air, Lake Superior College, and other organizations.',
         ],
       },
