@@ -11,8 +11,14 @@ export const experience = [
     role: 'Principal Software Engineer',
     org: 'Lawler Innovations Inc',
     period: '2014 – Present',
-    link: 'https://lawlerinnovationsinc.com',
     subroles: [
+      {
+        title: 'Lawler Innovations Inc',
+        link: 'https://lawlerinnovationsinc.com',
+        points: [
+          'Designed and built the full-stack Lawler Innovations Inc website.',
+        ],
+      },
       {
         title: 'Cirrus Aircraft LMS Project',
         meta: '2023 – Present',

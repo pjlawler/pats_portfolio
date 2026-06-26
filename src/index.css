@@ -355,6 +355,15 @@ a {
   color: var(--text);
 }
 
+.subrole__link {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.subrole__link:hover {
+  text-decoration: underline;
+}
+
 .subrole__meta {
   color: var(--muted);
   font-size: 0.8rem;

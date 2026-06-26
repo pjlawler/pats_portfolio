@@ -22,15 +22,23 @@ function Developer() {
                   {job.org} · {job.period}
                 </span>
               </div>
-              {job.link && (
-                <a className="role__link" href={job.link} target="_blank" rel="noreferrer">
-                  lawlerinnovationsinc.com →
-                </a>
-              )}
               {job.subroles.map((sub) => (
                 <div key={sub.title} className="subrole">
                   <div className="subrole__head">
-                    <h5 className="subrole__title">{sub.title}</h5>
+                    <h5 className="subrole__title">
+                      {sub.link ? (
+                        <a
+                          className="subrole__link"
+                          href={sub.link}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {sub.title} ↗
+                        </a>
+                      ) : (
+                        sub.title
+                      )}
+                    </h5>
                     {sub.meta && <span className="subrole__meta">{sub.meta}</span>}
                   </div>
                   <ul className="role__points">
