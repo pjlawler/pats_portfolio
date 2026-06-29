@@ -14,16 +14,18 @@ export const experience = [
       {
         heading: 'Cirrus Aircraft',
         body: [
-          "As an independent contractor, Pat has led the Cirrus Approach mobile team in iOS development for nearly the past four years, working Agile with Azure DevOps and CI/CD pipelines and shipping via TestFlight and the App Store. The app he builds is how users interact with the Cirrus Approach Learning Management System (LMS): students complete courses through videos, interactive web apps, and quizzes, and have full access to their training records, while instructors manage their students' training and document one-on-one instruction right on the device. He builds with SwiftUI, Swift, CocoaPods, and web technologies (HTML/CSS/JS), manages 25+ RESTful API integrations across Cirrus, Apple iTunes, and Vimeo services, and serves as a Cirrus Pilot/Instructor subject-matter expert throughout the design process.",
-          "In early 2024, he and a small, close-knit team worked side by side to build an Augmented Reality preflight training feature for the Cirrus Approach iPad app that allows students to do an actual walk-around of a virtual 3D aircraft alongside a fully interactive checklist. Alongside their day-to-day Cirrus Approach work, that same team quietly took on a skunkworks-style project: the initial Let's Go Fly app — a completely separate product built for the Apple Vision Pro — where users get an immersive experience interacting with Cirrus aircraft models and watching fully immersive videos. As one of the key developers, Pat drew on his know-how, tenacity, and resourcefulness to embrace the new visionOS platform and develop a whole new paradigm of application.",
+          "As an independent contractor, Pat has led the Cirrus Approach mobile team in iOS development for nearly the past four years, working Agile with Azure DevOps, Jira, and CI/CD pipelines and shipping via TestFlight and the App Store. The app he builds is how users interact with the Cirrus Approach Learning Management System (LMS): students complete courses through videos, interactive web apps, and quizzes, and have full access to their training records, while instructors manage their students' training and document one-on-one instruction right on the device. He builds with SwiftUI, Swift, CocoaPods, and web technologies (HTML/CSS/JS), manages 25+ RESTful API integrations across Cirrus, Apple iTunes, and Vimeo services, and serves as a Cirrus Pilot/Instructor subject-matter expert throughout the design process.",
+          "Pat has designed and built core features across the app, including the Flight Ready offline mode that gives pilots full access to their training without a connection, the content player that drives the course experience, and the Augmented Preflight walkaround. That 2024 augmented-reality feature — which he and a small, close-knit team worked side by side to build — lets students do an actual walk-around of a virtual 3D aircraft alongside a fully interactive checklist.",
+          "Beyond their day-to-day Cirrus Approach work, that same team quietly took on a skunkworks-style project: the initial Let's Go Fly app — a completely separate product built for the Apple Vision Pro — where users get an immersive experience interacting with Cirrus aircraft models and watching fully immersive videos. As one of the key developers, Pat drew on his know-how, tenacity, and resourcefulness to embrace the new visionOS platform and develop a whole new paradigm of application.",
         ],
       },
-      {
-        heading: 'RealSimGear',
-        body: [
-          "Pat provides subject-matter-expert consulting and software development services for RealSimGear, contributing to the development of their customer-facing interface software.",
-        ],
-      },
+      // Hidden until written permission is obtained from RealSimGear.
+      // {
+      //   heading: 'RealSimGear',
+      //   body: [
+      //     "Pat provides subject-matter-expert consulting and software development services for RealSimGear, contributing to the development of their customer-facing interface software.",
+      //   ],
+      // },
       {
         heading: 'Guard Guys LLC',
         body: [
