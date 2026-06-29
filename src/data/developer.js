@@ -18,6 +18,24 @@ export const experience = [
           "Pat has designed and built core features across the app, including the Flight Ready offline mode that gives pilots full access to their training without a connection, the content player that drives the course experience, and the Augmented Preflight walkaround. That 2024 augmented-reality feature — which he and a small, close-knit team worked side by side to build — lets students do an actual walk-around of a virtual 3D aircraft alongside a fully interactive checklist.",
           "Beyond their day-to-day Cirrus Approach work, that same team quietly took on a skunkworks-style project: the initial Let's Go Fly app — a completely separate product built for the Apple Vision Pro — where users get an immersive experience interacting with Cirrus aircraft models and watching fully immersive videos. As one of the key developers, Pat drew on his know-how, tenacity, and resourcefulness to embrace the new visionOS platform and develop a whole new paradigm of application.",
         ],
+        projects: [
+          {
+            img: 'cirrus-approach',
+            title: 'Cirrus Approach',
+            type: 'iOS · Aviation EdTech',
+            body: "Pat leads iOS development of Cirrus Approach — the app pilots and instructors use to access the Cirrus Approach Learning Management System through video courses, interactive lessons, and quizzes. Built in SwiftUI across 25+ API integrations, with Pat serving as the Cirrus pilot and instructor subject-matter expert throughout.",
+            tech: ['SwiftUI', 'Swift', 'ARKit', 'REST APIs', 'Azure DevOps'],
+            link: 'https://apps.apple.com/us/app/cirrus-approach/id1448733796',
+          },
+          {
+            img: 'lets-go-fly',
+            title: "Let's Go Fly!",
+            type: 'visionOS · Immersive',
+            body: 'A Cirrus Aircraft app pairing an immersive SR22T flight with a virtual-reality walk-around of a full-sized 3D aircraft. Pat provided all of the initial discovery and SwiftUI coding and built the initial MVP that debuted at AirVenture Oshkosh in 2024.',
+            tech: ['RealityKit', 'SwiftUI', '3D'],
+            link: 'https://apps.apple.com/us/app/lets-go-fly/id6757612693',
+          },
+        ],
       },
       // Hidden until written permission is obtained from RealSimGear.
       // {
@@ -31,11 +49,48 @@ export const experience = [
         body: [
           "After building Guard Guys' original company website, Pat now develops and maintains their full-stack 911DrugTest Network website and a proprietary full-stack scheduling website and iOS app that the business runs on.",
         ],
+        projects: [
+          {
+            img: '911',
+            logo: true,
+            title: '911 Drug Test Network',
+            type: 'Full-Stack · Web',
+            body: 'Pat designed, built, and continues to maintain the full-stack 911 Drug Test Network platform — the website plus a proprietary scheduling site and iOS app this nationwide drug & alcohol testing business runs on. Delivered and maintained through a CI/CD process, working directly with the stakeholders.',
+            tech: ['Cloudflare Workers', 'Hono', 'TypeScript', 'D1', 'R2', 'Durable Objects', 'PWA'],
+            link: 'https://911drugtest.com',
+          },
+        ],
       },
       {
         heading: 'Other Projects',
         body: [
           "Beyond his contracts, Pat designed, built, and maintains the iOS apps FunctionCalc, Learn Thai – Alphabet, and CalorieCalc – Averaging, along with the full-stack Lawler Innovations Inc website, and created Microsoft Access and Excel VBA tools that streamlined operations for Endeavor Air, Lake Superior College, and other organizations.",
+        ],
+        projects: [
+          {
+            img: 'learn-thai',
+            title: 'Learn Thai – Alphabet',
+            type: 'iOS · Language',
+            body: 'Pat designed, created, and maintains this iOS app that teaches the Thai alphabet through repetition and a native Thai speaker.',
+            tech: ['Swift', 'Core Animation'],
+            link: 'https://apps.apple.com/us/app/learn-thai-alphabet/id1505140057',
+          },
+          {
+            img: 'functioncalc',
+            title: 'FunctionCalc',
+            type: 'iOS · Utilities',
+            body: 'Pat designed, created, and maintains FunctionCalc — an all-in-one calculator and toolkit (VA disability calculator, date tracker, tip splitter, unit converter, and more) built for veterans, now in its fourth major revision.',
+            tech: ['SwiftUI'],
+            link: 'https://apps.apple.com/us/app/functioncalc/id1455028714',
+          },
+          {
+            img: 'caloriecalc',
+            title: 'CalorieCalc – Averaging',
+            type: 'iOS · Health & Fitness',
+            body: 'Pat designed, created, and maintains CalorieCalc – Averaging, a stripped-down calorie tracker with no social feeds or upsells — just fast logging and the weekly averaging the big trackers leave out.',
+            tech: ['SwiftUI'],
+            link: 'https://apps.apple.com/us/app/caloriecalc-averaging/id6762500390',
+          },
         ],
       },
     ],

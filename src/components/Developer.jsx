@@ -1,6 +1,21 @@
 import { useState } from 'react'
 import developerBanner from '../assets/developer-banner.webp'
+import cirrusApproachImg from '../assets/cirrus-approach-icon.jpg'
+import letsGoFlyImg from '../assets/lets-go-fly-icon.jpg'
+import drugTestImg from '../assets/911-logo.svg'
+import learnThaiImg from '../assets/learn-thai-icon.jpg'
+import functionCalcImg from '../assets/functioncalc-icon.jpg'
+import calorieCalcImg from '../assets/caloriecalc-icon.jpg'
 import { experience, skills, summary } from '../data/developer.js'
+
+const projectImages = {
+  'cirrus-approach': cirrusApproachImg,
+  'lets-go-fly': letsGoFlyImg,
+  '911': drugTestImg,
+  'learn-thai': learnThaiImg,
+  functioncalc: functionCalcImg,
+  caloriecalc: calorieCalcImg,
+}
 
 function Developer() {
   const [open, setOpen] = useState(() => new Set())
@@ -57,6 +72,48 @@ function Developer() {
                         {sec.body.map((para, j) => (
                           <p key={j}>{para}</p>
                         ))}
+                        {sec.projects?.length > 0 && (
+                          <div className="work-stack">
+                            {sec.projects.map((proj) => (
+                              <div key={proj.title} className="work-card">
+                                <div className="work-card__head">
+                                  <img
+                                    className={`work-card__icon${proj.logo ? ' work-card__icon--logo' : ''}`}
+                                    src={projectImages[proj.img]}
+                                    alt=""
+                                    loading="lazy"
+                                  />
+                                  <span className="work-card__text">
+                                    <span className="work-card__title">{proj.title}</span>
+                                    <span className="work-card__type">{proj.type}</span>
+                                  </span>
+                                </div>
+                                <div className="work-card__detail">
+                                  <p>{proj.body}</p>
+                                  {proj.tech?.length > 0 && (
+                                    <ul className="work-card__tech">
+                                      {proj.tech.map((t) => (
+                                        <li key={t}>{t}</li>
+                                      ))}
+                                    </ul>
+                                  )}
+                                  {proj.link && (
+                                    <a
+                                      className="work-card__link"
+                                      href={proj.link}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                    >
+                                      {proj.link.includes('apps.apple.com')
+                                        ? 'View on the App Store ↗'
+                                        : 'Visit the site ↗'}
+                                    </a>
+                                  )}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
